@@ -11,22 +11,26 @@ nav {
     font-variant: small-caps;
 }
 
-nav li {
+nav li,
+footer li {
     display: inline-block;
     padding-right: 30px;
     
 }
 
-nav ul {
+nav ul,
+footer ul {
     padding: 0px;
 }
 
+footer a,
 nav a {
     color:white;
     text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover,
+footer a:hover {
     text-decoration: underline;
     text-decoration-color:#168ED9 ;
 }
