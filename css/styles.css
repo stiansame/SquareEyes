@@ -1,4 +1,33 @@
+
 body {
     background-color: #1B1B18 ;
-    font-family: "Niveau Grotesk", sans-serif;
+    font-family: "elza narrow", sans-serif;
+    color: white;
+}
+
+nav {
+    font-family: "niveau-grotesk", sans-serif;
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 30px;
+    
+}
+
+nav ul {
+    padding: 0px;
+}
+
+nav a {
+    color:white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+ 
+
 }
