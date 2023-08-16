@@ -72,6 +72,7 @@ body {
     "mymain"
     "myfooter";
   font-family: "elza narrow", sans-serif;
+  font-size: 1rem;
   color: #e6eef2;
   background-color: #373737;
 }
@@ -209,17 +210,18 @@ slider-wrapper {
   padding: 2rem;
   grid-area: 2/1/2/2;
   z-index: 2;
+  display: grid;
+  grid-template-rows: 1fr auto auto 1fr;
 }
 
 .content .heading_1 {
   font-family: "niveau-grotesk", sans-serif;
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 6vw, 3rem);
   font-weight: bold;
-  width: 90%;
 }
 
-.content .p {
-  width: 75%;
+.content .desc {
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 .content .cta_button {
