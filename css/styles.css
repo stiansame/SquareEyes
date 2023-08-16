@@ -146,26 +146,26 @@ slider-wrapper {
   grid-area: 3/2/4/3;
   justify-content: space-evenly;
   align-items: end;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   z-index: 4;
 }
 
 .slider-nav a {
-  height: 1rem;
-  width: 1rem;
-  border-radius: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1rem;
   background-color: #e6eef2;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
 
 .slider-nav a:active {
-  width: 4rem;
+  width: 6rem;
   background-color: #168ed9;
 }
 
 .slider-nav a:hover {
-  width: 4rem;
+  width: 6rem;
   background-color: #168ed9;
 }
 
@@ -213,13 +213,12 @@ slider-wrapper {
 
 .content .heading_1 {
   font-family: "niveau-grotesk", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   width: 90%;
 }
 
 .content .p {
-  font-size: 1.5rem;
   width: 75%;
 }
 
