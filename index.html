@@ -4,27 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2072bb14b3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/wgh0tdc.css">
     <link href="css/styles.css" rel="stylesheet">
     <title>SquareEyes - Home</title>
 </head>
 <body>
-    <header>
-        <img src="../images/logo.png" alt="Logo for SquareEyes website" />
-        <nav>
-            <ul>
-                <li><a href="../pages/movies.html">movies</a></li>
-                <li><a href="../pages/about.html">about</a></li>
-                <li><a href="../pages/contact.html">contact</a></li>
-                <li><a href="../pages/shopping_cart.html">shoppingcart</a></li>
-                <li><a href="../pages/player.html">player</a></li>
-                <li><a href="../pages/login.html">login</a></li>
-            </ul>
-        </nav>
+  <header>
+    <div id="toplogo">    
+    <img src="../images/squareeyes_logoselected.svg" alt="Logo for SquareEyes website" />
+    </div>
+        <div id="hamburger">
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox"><i class="fas fa-bars"></i></label>
+                <nav>
+                <a href="../pages/movies.html">movies</a>
+                <a href="../pages/about.html">about</a>
+                <a href="../pages/contact.html">contact</a>
+                <a href="../pages/shopping_cart.html">shoppingcart</a>
+                <a href="../pages/player.html">player</a>
+                <a href="../pages/login.html">login</a>
+                </nav>
+        </div>        
     </header>
         <main>
           <section class="hero">
-            Hero
+                <div class="slider-wrapper">
+                  <div class="slider">
+                    <!--<input type="radio" name="slider" id="slider1">
+                            <input type="radio" name="slider" id="slider2">
+                            <input type="radio" name="slider" id="slider3">-->
+                
+                    <div class="slider-nav">
+                      <a href="#slide1"></a>
+                      <a href="#slide2"></a>
+                      <a href="#slide3"></a>
+                    </div>
+                
+                    <div class="hero_content">
+                      <div class="hero_box slider1_bg" id="slide1">
+                        <div class="gradient" id="g1"></div>
+                        <div class="content">
+                          <div class="heading_1">From cinema to home cinema</div>
+                          <p class="desc">We have the latest releases, from Hollywood blockbusters and Bollywood dance-offs, to small
+                            French indie obscurities and
+                            Scandinavian viking dramas
+                          </p>
+                          <div class="cta_button">
+                            <a href="#">Browse</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="hero_box slider2_bg" id="slide2">
+                        <div class="gradient" id="g2"></div>
+                        <div class="content">
+                          <div class="heading_1">borra</div>
+                          <p class="desc">something</p>
+                        </div>
+                      </div>
+                      <div class="hero_box slider3_bg" id="slide3">
+                        <div class="gradient" id="g3"></div>
+                        <div class="content">
+                          <div class="heading_1">natta</div>
+                          <p class="desc">something</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
           </section>
           <section class="featured">
             Featured
@@ -40,6 +88,7 @@
         </section>
         </main>
         <footer>
+          <div>
             <ul>
                 <li><a href="http://youtube.com"><img src="../images/some/Youtube.png"></a></li>
                 <li><a href="http://Discord.com"><img src="../images/some/Discord.png"></a></li>
@@ -51,6 +100,7 @@
             <p>2023 Stian Rostad &copy;</p>
             <p>All images found on <a href="www.movieposters.com">www.movieposters.com</a> or <a href="www.cinematerial.com">www.cinematerial.com</a></p>
             <p>All icons found on <a href="www.flaticon.com">www.flaticon.com</a></p>
-        </footer>
+          </div>
+          </footer>
   </body>
 </html>
