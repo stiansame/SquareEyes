@@ -1,8 +1,8 @@
 header {
-  display: grid;
   position: relative;
-  grid-template-columns: 1fr 1fr auto;
-  grid-template-rows: 1fr auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 0.5rem;
   align-items: start;
   padding: 1rem;
@@ -15,7 +15,7 @@ header {
   max-height: 100px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  z-index: 2;
+  z-index: 5;
 }
 
 nav,
@@ -25,19 +25,20 @@ nav,
 
 nav {
   font-family: "niveau-grotesk", sans-serif;
-  font-size: 2rem;
+  font-size: clamp(3rem, 6vw, 4rem);
   font-variant: small-caps;
   background: lightgrey;
   padding: 0 1rem 1rem;
   position: absolute;
-  grid-row: -3;
-  grid-column: 1;
-  z-index: 2;
+  left: 0px;
+  top: 0px;
+  width: 75%;
 }
 
 #menu-checkbox:checked ~ nav {
   display: block;
 }
+
 #toplogo img {
   max-width: 100%;
   max-height: inherit;
@@ -56,7 +57,6 @@ nav {
 
 main {
   grid-area: mymain;
-  background: lightblue;
   width: 100%;
 }
 
@@ -86,7 +86,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 3fr 1fr;
-  grid-template-columns: minmax(428px 1fr);
+  grid-template-columns: minmax(428px, 1fr);
   grid-template-areas:
     "myheader"
     "mymain"
@@ -94,7 +94,8 @@ body {
   font-family: "elza narrow", sans-serif;
   font-size: 1rem;
   color: #e6eef2;
-  background-color: #373737;
+  background-color: #4d4855;
+  background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
 }
 
 footer li {
@@ -123,16 +124,15 @@ nav a {
   display: block;
 }
 
-.slider-wrapper {
+/*Hero slider */
+
+.content-wrapper {
   position: relative;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
-
-/*Hero slider */
-
-.slider {
+.grid {
   display: grid;
   width: 100%;
   height: 100%;
@@ -141,7 +141,7 @@ nav a {
   gap: 1rem;
 }
 
-.slider input {
+.grid input {
   visibility: hidden;
   display: none;
 }
@@ -270,4 +270,31 @@ nav a {
   opacity: 0.5;
   grid-area: 1/1/-1/-1;
   z-index: 1;
+}
+
+.featured_content {
+  display: grid;
+  gap: 1rem;
+  grid-area: 1/1/-1/-1;
+  padding: 0rem 1rem;
+}
+
+.feature {
+  flex: 1 0 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.featured .feature:nth-child(1) {
+  background-image: url(../images/interstellar_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.featured .feature:nth-child(2) {
+  background-image: url(../images/tgm_3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
