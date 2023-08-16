@@ -224,12 +224,12 @@ slider-wrapper {
 }
 
 .content .cta_button {
-  font-size: 2.5rem;
+  font-size: 2rem;
   border-radius: 0.2rem;
   background-color: #e6eef2;
   width: fit-content;
   opacity: 1;
-  padding: 1rem 0rem;
+  padding: 0.5rem 0rem;
 }
 
 .content .cta_button:hover {
