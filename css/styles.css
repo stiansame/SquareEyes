@@ -216,6 +216,7 @@ nav a {
   z-index: 2;
   display: grid;
   grid-template-rows: 1fr auto auto 1fr;
+  grid-column: 1fr auto;
 }
 
 .content .heading_1 {
@@ -289,12 +290,12 @@ nav a {
   background-image: url(../images/interstellar_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 
 .featured .feature:nth-child(2) {
   background-image: url(../images/tgm_3.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+  background-position: bottom;
 }
