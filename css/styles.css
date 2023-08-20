@@ -1,8 +1,9 @@
 header {
   position: sticky;
+  top: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px;
   gap: 0.5rem;
   align-items: start;
   padding: 1rem;
@@ -12,10 +13,10 @@ header {
   border-color: #1c4b67;
   border-width: 0 0 10px 0;
   font-size: 3rem;
-  max-height: 100px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  z-index: 5;
+  z-index: 10;
+  width: 100% -1rem;
 }
 
 nav,
@@ -29,25 +30,25 @@ nav {
   font-variant: small-caps;
   background: lightgrey;
   padding: 0 1rem 1rem;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 75%;
+  opacity: 0.5;
+  transition: all 0.5s;
 }
 
 #menu-checkbox:checked ~ nav {
   display: block;
+  position: absolute;
+  left: 0;
+  top: 132px;
+  opacity: 1;
 }
 
 #toplogo img {
-  max-width: 100%;
-  max-height: inherit;
   display: block;
+  max-height: 100px;
 }
 
 #toplogo {
   grid-area: 1/1/2/2;
-  max-height: inherit;
 }
 
 #hamburger {
@@ -90,8 +91,8 @@ body {
   font-family: "elza narrow", sans-serif;
   font-size: 1rem;
   color: #e6eef2;
-  /*background-color: #4d4855;
-  background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);*/
+  background-color: #4d4855;
+  background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
 }
 
 footer li {
