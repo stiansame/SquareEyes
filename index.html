@@ -11,24 +11,38 @@
 </head>
 <body>
   <header>
-    <div id="toplogo">    
+    <div class="logo">    
     <img src="../images/squareeyes_logoselected.svg" alt="Logo for SquareEyes website">
     </div>
-        <div id="hamburger">
-        <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox"><i class="fas fa-bars"></i></label>
-        
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
                 <nav>
-                <a href="../pages/index.html">home</a>
-                <a href="../pages/movies.html">movies</a>
-                <a href="../pages/about.html">about</a>
-                <a href="../pages/contact.html">contact</a>
-                <a href="../pages/shopping_cart.html">shopping cart</a>
-                <a href="../pages/player.html">player</a>
-                <a href="../pages/login.html">login</a>
+                 <!--- <ul>
+                <li class="hide"><a href="../pages/index.html" >home</a></li>
+                <li><a href="../pages/movies.html">movies</a></li>
+                <li><a href="../pages/about.html">about</a></li>
+                <li><a href="../pages/contact.html">contact</a></li>
+                <li><a href="../pages/shopping_cart.html">shopping cart<i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="../pages/player.html">player<i class="fa-regular fa-circle-play"></i></a></li>
+                <li><a href="../pages/login.html">login<i class="fa-solid fa-user"></i></a></li>
+                </ul>-->
+
+                <div class="menu-container">
+                  <div class="menu-item" id="hide"><a href="../pages/index.html" >home</a></div>
+                  <div class="menu-item"><a href="../pages/movies.html">movies</a></div>
+                  <div class="menu-item"><a href="../pages/about.html">about</a></div>
+                  <div class="menu-item"><a href="../pages/contact.html">contact</a></div>
+                  <div class="menu-item"><a href="../pages/shopping_cart.html">shopping cart<i class="fa-solid fa-cart-shopping"></i></a></div>
+                  <div class="menu-item"><a href="../pages/player.html">player<i class="fa-regular fa-circle-play"></i></a></div>
+                  <div class="menu-item"><a href="../pages/login.html">login<i class="fa-solid fa-user"></i></a></div>
+                </div>
+
               </nav>
-        </div> 
+         <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fas fa-bars"></i>
+            <i class="fa-solid fa-x"></i>
+         </label>
     </header>
+
         <main>
           <section class="hero">
                 <div class="content-wrapper">
