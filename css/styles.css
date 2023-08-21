@@ -403,16 +403,32 @@ footer a:hover {
 
 /*featured ends here!*/
 
+/*Banner starts here!*/
+
 .cta_container {
   display: grid;
-  grid-template-columns: repeat(3 1fr);
+  grid-template-columns: 2rem 1fr 2fr 2rem;
+  background-image: linear-gradient(90deg, #e6e1dd 0%, e0dbd5 34%);
+  background-color: #edeae6;
+  color: #373738;
+}
+
+.cta_img {
+  background-image: url(../images/jack.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-area: 1/2/2/3;
+  width: 100%;
 }
 
 .cta_container #banner {
+  grid-area: 1/3/2/4;
   padding-top: 4rem;
-  background-color: #e6eef2;
-  color: #373738;
+  background-color: transparent;
 }
+
+/*Banner ends here!*/
 
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
 
