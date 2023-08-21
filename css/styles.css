@@ -28,6 +28,9 @@ body {
 .header-container {
   display: grid;
   grid-template-columns: 1rem auto 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 main {
@@ -74,14 +77,10 @@ main {
 header {
   grid-area: 1/2/2/3;
   background: var(--menu-bg);
-  position: sticky;
-  top: 0;
-  z-index: 100;
   width: 100%;
   padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-bottom: #1c4b67 solid 0.5rem;
+  filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.8));
 }
 
 nav {
@@ -125,7 +124,7 @@ nav {
   position: absolute;
   right: 0;
   top: 0;
-  margin-right: 1rem;
+  margin-right: 2rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -372,8 +371,7 @@ footer a:hover {
   grid-area: 1/1/-1/-1;
   padding: 0rem;
   grid-template-rows: repeat(2, 1fr);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));
 }
 
 .feature {
