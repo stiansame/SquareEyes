@@ -8,7 +8,7 @@
 }
 
 :root {
-  --menu-bg: rgba(55, 55, 54, 1);
+  --menu-bg: #373736;
 }
 
 html {
@@ -21,9 +21,13 @@ html {
 }
 
 body {
-  background: var(--menu-bg);
   font-family: "Elza narrow", sans-serif;
   font-weight: normal;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 1rem auto 1rem;
 }
 
 main {
@@ -68,6 +72,7 @@ main {
 }
 
 header {
+  grid-area: 1/2/2/3;
   background: var(--menu-bg);
   position: sticky;
   top: 0;
@@ -413,7 +418,7 @@ footer a:hover {
 
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 850px) {
   main {
     /*width: 100%;
   display: grid;*/
@@ -422,6 +427,11 @@ footer a:hover {
   }
 
   /*Navbar styling here!*/
+
+  .header-container {
+    grid-template-columns: 2rem auto 2rem;
+  }
+
   .nav-toggle-label {
     display: none;
   }
