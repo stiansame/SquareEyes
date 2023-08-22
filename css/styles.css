@@ -68,11 +68,11 @@ main {
 
 .logo {
   height: 100%;
+  justify-self: left;
 }
 
 .logo img {
   max-height: 100px;
-  justify-self: left;
 }
 
 header {
