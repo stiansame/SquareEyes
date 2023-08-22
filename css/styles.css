@@ -27,7 +27,7 @@ body {
 
 .header-container {
   display: grid;
-  grid-template-columns: 1rem auto 1rem;
+  grid-template-columns: 1fr;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -75,7 +75,7 @@ main {
 }
 
 header {
-  grid-area: 1/2/2/3;
+  grid-area: 1/1/2/2;
   background: var(--menu-bg);
   width: 100%;
   padding: 1rem;
@@ -444,6 +444,10 @@ footer a:hover {
 
   .header-container {
     grid-template-columns: 2rem auto 2rem;
+  }
+
+  header {
+    grid-area: 1/2/2/3;
   }
 
   .nav-toggle-label {
