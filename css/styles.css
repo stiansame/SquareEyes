@@ -37,7 +37,7 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: 1rem 1fr 1rem;
-  grid-template-rows: auto 2rem auto 2rem auto 2rem auto auto;
+  grid-template-rows: auto 2rem auto 4rem 4rem auto 8rem auto auto;
 }
 
 .hero {
@@ -45,21 +45,21 @@ main {
 }
 
 .featured {
-  grid-area: 2/2/5/3;
+  grid-area: 2/2/6/3;
   z-index: 20;
 }
 
 .banner {
-  grid-area: 4/1/6/4;
+  grid-area: 4/1/8/4;
 }
 
 .new {
-  grid-area: 7/2/8/3;
+  grid-area: 8/2/9/3;
   z-index: 1;
 }
 
 .reviews {
-  grid-area: 8/2/9/3;
+  grid-area: 9/2/10/3;
 }
 
 .heading_1 {
@@ -416,6 +416,7 @@ footer a:hover {
 .cta_container {
   display: grid;
   grid-template-columns: 2rem 1fr 2fr 2rem;
+  grid-template-rows: 8rem auto 8rem;
   gap: 1rem;
   background-image: linear-gradient(90deg, #e6e1dd 0%, e0dbd5 34%);
   background-color: #edeae6;
@@ -427,12 +428,13 @@ footer a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  grid-area: 1/1/2/3;
+  grid-area: 2/1/3/3;
   width: 100%;
+  height: 100%;
 }
 
 .banner-content {
-  grid-area: 1/3/2/5;
+  grid-area: 2/3/3/5;
   padding-top: 4rem;
   padding-right: 1rem;
   display: grid;
