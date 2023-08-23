@@ -87,9 +87,10 @@ nav {
   font-family: "niveau-grotesk", sans-serif;
   position: absolute;
   text-align: left;
-  top: calc(100%);
+  top: calc(100% - 0.5rem);
   left: 0;
   background: var(--menu-bg);
+  border-bottom: #1c4b67 solid 0.5rem;
   width: 100%;
   z-index: 90;
   transform: scale(1, 0);
