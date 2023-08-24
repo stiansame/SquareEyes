@@ -462,6 +462,7 @@ footer a:hover {
 .movie-carousel {
   display: flex;
   overflow-x: auto;
+  margin: 0rem -1rem;
 }
 
 .movie {
