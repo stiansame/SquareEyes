@@ -474,7 +474,6 @@ footer a:hover {
 .movie img {
   height: 20rem;
   object-fit: contain;
-  object-position: center center;
 }
 
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
