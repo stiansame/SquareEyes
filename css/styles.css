@@ -101,6 +101,12 @@ main {
   color: #168ed9;
 }
 
+.rating {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  color: #168ed9;
+  align-self: center;
+}
+
 /*Universal ends here!*/
 
 /*Navbar starts here!*/
@@ -469,6 +475,12 @@ footer a:hover {
   display: flex;
   overflow-x: auto;
   margin: 0rem -1rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.movie-carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .movie {
@@ -478,8 +490,9 @@ footer a:hover {
 }
 
 .movie img {
-  height: 20rem;
-  object-fit: contain;
+  height: 23rem;
+  width: 14rem;
+  object-fit: cover;
 }
 
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
