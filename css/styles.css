@@ -68,6 +68,12 @@ main {
   font-weight: bold;
 }
 
+.heading_2 {
+  font-family: "niveau-grotesk", sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: bold;
+}
+
 .desc {
   font-size: clamp(1rem, 3vw, 2rem);
 }
