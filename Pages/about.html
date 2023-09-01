@@ -1,60 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/wgh0tdc.css">
-    <link href="../css/styles.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2072bb14b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://use.typekit.net/wgh0tdc.css" />
+    <link href="../css/styles.css" rel="stylesheet" />
     <title>SquareEyes - Home</title>
-</head>
-
-<body>
-    <header>
-        <img src="../images/logo.png" alt="Logo for SquareEyes website" />
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="../images/squareeyes_logoselected.svg"
+              alt="Logo for SquareEyes website"
+          /></a>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
         <nav>
-            <ul>
-                <li><a href="../pages/movies.html">movies</a></li>
-                <li><a href="../pages/about.html">about</a></li>
-                <li><a href="../pages/contact.html">contact</a></li>
-                <li><a href="../pages/shopping_cart.html">shoppingcart</a></li>
-                <li><a href="../pages/player.html">player</a></li>
-                <li><a href="../pages/login.html">login</a></li>
-            </ul>
+          <div class="menu-container">
+            <div class="menu-item" id="hide">
+              <a href="../index.html">home</a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/movies.html">movies</a>
+            </div>
+            <div class="menu-item active">
+              <a href="../pages/about.html">about</a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/contact.html">contact</a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/shopping_cart.html"
+                ><span>shopping cart</span
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/player.html"
+                ><span>player</span><i class="fa-regular fa-circle-play"></i
+              ></a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/login.html"
+                ><span>login</span><i class="fa-solid fa-user"></i
+              ></a>
+            </div>
+          </div>
         </nav>
-    </header>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <i class="fas fa-bars"></i>
+          <i class="fa-solid fa-x"></i>
+        </label>
+      </header>
+    </div>
     <main>
-        <section class="hero">
-            Hero
+        <section class="about-container">
+            <div class="heading_1">About us</div>
+            <div class="about-content">
+                <img class="abo_img" src="../images/aboutUs.jpg">
+                <div class="heading_2">The Square Eyes Crew</div>
+                <p class="desc">
+                    Welcome to Square Eyes, the streaming site that is the ultimate destination for film aficionados seeking an unparalleled movie watching experience. Established in 2014, Square Eyes has been providing a wide selection of high-quality films to movie lovers around the world for nearly a decade.
+
+Our site is designed to cater to the needs of film enthusiasts who demand the best in terms of quality, selection, and ease of use. We offer a vast array of films from different genres, including classics, independent movies, foreign films, documentaries, and much more. Our library is constantly expanding, and we are always adding new titles to keep up with our customers' demands.
+
+At Square Eyes, we believe that watching a movie should be a complete sensory experience. That's why we strive to deliver the best video and audio quality possible. Our films are available in crystal clear high definition, and we use the latest audio technology to provide a truly immersive audio experience. Our platform is optimized to ensure that our customers can enjoy seamless streaming without any buffering or lag.
+
+We believe that great movies should be accessible to everyone. That's why we offer our service at an affordable price, without sacrificing quality or selection. We also believe in the importance of supporting independent filmmakers, which is why we showcase a variety of independent films and documentaries that might not be available on other platforms.
+
+We are passionate about movies, and we believe that they have the power to inspire, entertain, and educate. That's why we are constantly working to improve our service and provide the best possible experience for our customers. We believe that with Square Eyes, you will never run out of great movies to watch.
+
+Thank you for choosing Square Eyes. We look forward to providing you with the best movie watching experience possible.
+                </p>
+            </div>
+
         </section>
-        <section class="featured">
-            Featured
-        </section>
-        <section class="banner">
-            Banner
-        </section>
-        <section class="New">
-            New Arrivals
-        </section>
-        <section class="reviews">
-            User Reviews
-        </section>
+        <section class="about-banner">
+                <div class="cta_container">
+                    <div class="cta_img"></div>
+                    <div class="banner-content">
+                    <div class="heading_1">Join us today!</div>
+                    <p class="desc">
+                        all our members enjoy a 15% discount on all purchases, both single views and Buy-to-own. </br>
+                        The best part? </br>
+                        Membership is <b>completely free of charge</b>
+                    </p>
+                            <div class="cta_button">
+                                <a href="#">Join Now</a>
+                            </div>
+                    </div>
+                </div>
+        </section>        
+        
     </main>
     <footer>
+      <div>
         <ul>
-            <li><a href="http://youtube.com"><img src="../images/some/Youtube.png"></a></li>
-            <li><a href="http://Discord.com"><img src="../images/some/Discord.png"></a></li>
-            <li><a href="http://Facebook.com"><img src="../images/some/Facebook.png"></a></li>
-            <li><a href="http://instagram.com"><img src="../images/some/Instagram.png"></a></li>
-            <li><a href="http://snapchat.com"><img src="../images/some/SnapChat.png"></a></li>
-            <li><a href="http://twitter.com"><img src="../images/some/Twitter.png"></a></li>
+          <li>
+            <a href="http://youtube.com"
+              ><img src="../images/some/Youtube.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://Discord.com"
+              ><img src="../images/some/Discord.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://Facebook.com"
+              ><img src="../images/some/Facebook.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://instagram.com"
+              ><img src="../images/some/Instagram.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://snapchat.com"
+              ><img src="../images/some/SnapChat.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://twitter.com"
+              ><img src="../images/some/Twitter.png"
+            /></a>
+          </li>
         </ul>
         <p>2023 Stian Rostad &copy;</p>
-        <p>All images found on <a href="www.movieposters.com">www.movieposters.com</a> or <a
-                href="www.cinematerial.com">www.cinematerial.com</a></p>
-        <p>All icons found on <a href="www.flaticon.com">www.flaticon.com</a></p>
+        <p>
+          All images found on
+          <a href="www.movieposters.com">www.movieposters.com</a> or
+          <a href="www.cinematerial.com">www.cinematerial.com</a>
+        </p>
+        <p>
+          All icons found on <a href="www.flaticon.com">www.flaticon.com</a>
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
