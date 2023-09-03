@@ -496,6 +496,7 @@ footer a:hover {
 
 .movie-carousel {
   display: flex;
+  justify-content: space-between;
   overflow-x: auto;
   margin: 0rem -1rem;
   -ms-overflow-style: none;
@@ -507,15 +508,33 @@ footer a:hover {
 }
 
 .movie {
-  flex: 1 0;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
   padding: 1rem;
   filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));
+  cursor: pointer;
 }
 
 .movie img {
+  grid-area: 1/1/3/2;
   height: 23rem;
   width: 14rem;
   object-fit: cover;
+}
+
+.blur {
+  grid-area: 2/1/3/2;
+  background: rgba(22, 22, 24, 0.7);
+  padding: 1rem;
+  opacity: 0;
+}
+
+.movie:hover img {
+  outline: #168ed9 solid 3px;
+}
+
+.movie:hover .blur {
+  opacity: 1;
 }
 
 /*--New arrivals End here! ----*/
@@ -728,6 +747,8 @@ footer a:hover {
   }
 
   /*End featured styling*/
+
+  /*new arrivals styling*/
 
   /*review styling*/
 
