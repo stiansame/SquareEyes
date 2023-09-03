@@ -597,10 +597,8 @@ footer a:hover {
 .review .desc {
   --max-lines: 3;
   --line-height: 1.1;
-
   max-height: calc(var(--max-lines) * 1rem * var(--line-height));
   line-height: var(--line-height);
-
   overflow: hidden;
   padding: 0 1rem;
 }
@@ -614,6 +612,10 @@ footer a:hover {
 }
 
 .review .heading_2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
   padding: 0 1rem;
 }
 
