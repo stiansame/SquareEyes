@@ -598,7 +598,6 @@ footer a:hover {
   grid-area: 6/1/7/2;
   width: 100%;
   padding: 0 1rem 1rem;
-  text-align: end;
 }
 
 .review_btn {
@@ -608,6 +607,7 @@ footer a:hover {
   color: #edeae6;
   font-family: "Elza Narrow", sans-serif;
   font-size: clamp(1rem, 3vw, 2rem);
+  width: auto;
 }
 
 .review_btn:hover {
