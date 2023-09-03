@@ -1,60 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/wgh0tdc.css">
-    <link href="../css/styles.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2072bb14b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://use.typekit.net/wgh0tdc.css" />
+    <link href="../css/styles.css" rel="stylesheet" />
     <title>SquareEyes - Home</title>
-</head>
-
-<body>
-    <header>
-        <img src="../images/logo.png" alt="Logo for SquareEyes website" />
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="../images/SquareEyes_logo.svg"
+              alt="Logo for SquareEyes website"
+          /></a>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
         <nav>
-            <ul>
-                <li><a href="../pages/movies.html">movies</a></li>
-                <li><a href="../pages/about.html">about</a></li>
-                <li><a href="../pages/contact.html">contact</a></li>
-                <li><a href="../pages/shopping_cart.html">shoppingcart</a></li>
-                <li><a href="../pages/player.html">player</a></li>
-                <li><a href="../pages/login.html">login</a></li>
-            </ul>
+          <div class="menu-container">
+            <div class="menu-item" id="hide">
+              <a href="../index.html">home</a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/movies.html">movies</a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/about.html">about</h1></a>
+            </div>
+            <div class="menu-item active">
+              <a href="../pages/contact.html"><h1>contact</h1></a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/shopping_cart.html"
+                ><span>shopping cart</span
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/player.html"
+                ><span>player</span><i class="fa-regular fa-circle-play"></i
+              ></a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/login.html"
+                ><span>login</span><i class="fa-solid fa-user"></i
+              ></a>
+            </div>
+          </div>
         </nav>
-    </header>
-    <main>
-        <section class="hero">
-            Hero
+        <label for="nav-toggle" class="nav-toggle-label">
+          <i class="fas fa-bars"></i>
+          <i class="fa-solid fa-x"></i>
+        </label>
+      </header>
+    </div>
+    <contact>
+        <section class="contact-container">
+            <div class="heading_1">FAQ</div>
+            <div class="faq-content">
+
+            </div>
+            <div class="heading_1">Contact us!</div>
+            <div class="contact-form">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form__input" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" class="form__input" required>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" class="form__input" rows="5" required></textarea>
+                    <input type="submit" value="Send" class="cta_button">
+                </form>
+            </div>
+
         </section>
-        <section class="featured">
-            Featured
-        </section>
-        <section class="banner">
-            Banner
-        </section>
-        <section class="New">
-            New Arrivals
-        </section>
-        <section class="reviews">
-            User Reviews
-        </section>
-    </main>
+ 
+        
+    </contact>
     <footer>
+      <div>
         <ul>
-            <li><a href="http://youtube.com"><img src="../images/some/Youtube.png"></a></li>
-            <li><a href="http://Discord.com"><img src="../images/some/Discord.png"></a></li>
-            <li><a href="http://Facebook.com"><img src="../images/some/Facebook.png"></a></li>
-            <li><a href="http://instagram.com"><img src="../images/some/Instagram.png"></a></li>
-            <li><a href="http://snapchat.com"><img src="../images/some/SnapChat.png"></a></li>
-            <li><a href="http://twitter.com"><img src="../images/some/Twitter.png"></a></li>
+          <li>
+            <a href="http://youtube.com"
+              ><img src="../images/some/Youtube.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://Discord.com"
+              ><img src="../images/some/Discord.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://Facebook.com"
+              ><img src="../images/some/Facebook.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://instagram.com"
+              ><img src="../images/some/Instagram.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://snapchat.com"
+              ><img src="../images/some/SnapChat.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://twitter.com"
+              ><img src="../images/some/Twitter.png"
+            /></a>
+          </li>
         </ul>
         <p>2023 Stian Rostad &copy;</p>
-        <p>All images found on <a href="www.movieposters.com">www.movieposters.com</a> or <a
-                href="www.cinematerial.com">www.cinematerial.com</a></p>
-        <p>All icons found on <a href="www.flaticon.com">www.flaticon.com</a></p>
+        <p>
+          All images found on
+          <a href="www.movieposters.com">www.movieposters.com</a> or
+          <a href="www.cinematerial.com">www.cinematerial.com</a>
+        </p>
+        <p>
+          All icons found on <a href="www.flaticon.com">www.flaticon.com</a>
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
