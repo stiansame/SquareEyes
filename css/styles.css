@@ -594,6 +594,11 @@ footer a:hover {
   padding: 0 1rem;
 }
 
+.read-btn {
+  grid-area: 6/1/7/2;
+  justify-self: end;
+}
+
 .review_btn {
   appearance: none;
   padding: 0.5rem;
@@ -601,7 +606,6 @@ footer a:hover {
   color: #edeae6;
   font-family: "Elza Narrow", sans-serif;
   font-size: clamp(1rem, 3vw, 2rem);
-  justify-self: end;
 }
 
 .review_btn:hover {
@@ -616,7 +620,7 @@ footer a:hover {
   content: "...read less!";
 }
 
-.review .desc:has(+ .review_btn:checked) {
+.review .desc:has(+ .read-btn .review_btn:checked) {
   max-height: none;
 }
 
