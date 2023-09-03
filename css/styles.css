@@ -596,6 +596,9 @@ footer a:hover {
 
 .read-btn {
   grid-area: 6/1/7/2;
+  width: 100%;
+  padding: 0 1rem 1rem;
+  text-align: end;
 }
 
 .review_btn {
