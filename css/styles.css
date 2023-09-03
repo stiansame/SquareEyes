@@ -596,7 +596,6 @@ footer a:hover {
 
 .read-btn {
   grid-area: 6/1/7/2;
-  justify-self: end;
 }
 
 .review_btn {
