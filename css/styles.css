@@ -573,9 +573,11 @@ footer a:hover {
 
 .review .desc {
   --max-lines: 3;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: var(--max-lines);
+  --line-height: 1.1;
+
+  max-height: calc(var(--max-lines) * 1rem * var(--line-height));
+  line-height: var(--line-height);
+
   overflow: hidden;
   padding: 0 1rem;
 }
@@ -615,7 +617,7 @@ footer a:hover {
 }
 
 .review .desc:has(+ .review_btn:checked) {
-  -webkit-line-clamp: 50;
+  max-height: none;
 }
 
 /*--- review ends here!---*/
