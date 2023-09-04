@@ -112,6 +112,12 @@ h2 {
   padding-left: 1rem;
 }
 
+h3 {
+  font-family: "Elza Narrow", sans-serif;
+  font-size: clamp(1.2rem, 6vw, 2rem);
+  font-weight: bold;
+}
+
 .desc {
   font-size: clamp(1rem, 3vw, 2rem);
 }
@@ -697,11 +703,13 @@ footer a:hover {
 
 .contact-container {
   grid-area: 1/2/2/3;
+  padding: 1rem;
 }
 
 .contact-form {
   padding: 1rem;
   width: 100%;
+  background-color: var(--menu-bg);
 }
 
 .contact-form form {
@@ -742,6 +750,67 @@ footer a:hover {
 .contact-form .cta_button:hover {
   color: #168ed9;
   background: #edeae6;
+}
+
+.faq-content {
+  display: grid;
+  width: 100%;
+  background-color: var(--menu-bg);
+  grid-template-rows: repeat(4, auto);
+  gap: 1rem;
+}
+
+.faq-content input[type="radio"] {
+  display: none;
+}
+
+.faq-content .faq {
+  position: relative;
+}
+
+.faq-content .question {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Elza Narrow", sans-serif;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: bold;
+}
+
+.faq-content .question:hover {
+  background-color: #168ed9;
+}
+
+.faq-content .question label {
+  cursor: pointer;
+}
+
+.faq-content .answer {
+  background-color: #edeae6;
+  color: #363638;
+  padding: 1rem;
+  display: none;
+  opacity: 0;
+  border-left: #168ed9 0.3rem solid;
+  border-right: #168ed9 0.3rem solid;
+  border-bottom: #168ed9 0.3rem solid;
+}
+
+#q1:checked ~ .faq #a1,
+#q2:checked ~ .faq #a2,
+#q3:checked ~ .faq #a3,
+#q4:checked ~ .faq #a4 {
+  display: block;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+#q1:checked ~ .faq:nth-child(2),
+#q2:checked ~ .faq:nth-child(4),
+#q3:checked ~ .faq:nth-child(6),
+#q4:checked ~ .faq:nth-child(8) {
+  background-color: #168ed9;
 }
 
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
