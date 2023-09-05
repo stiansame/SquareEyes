@@ -706,6 +706,10 @@ footer a:hover {
   padding: 1rem;
 }
 
+.contact-container .heading_1 {
+  margin-top: 2rem;
+}
+
 .contact-form {
   padding: 1rem;
   width: 100%;
@@ -758,6 +762,7 @@ footer a:hover {
   background-color: var(--menu-bg);
   grid-template-rows: repeat(4, auto);
   gap: 1rem;
+  align-items: start;
 }
 
 .faq-content input[type="radio"] {
@@ -774,7 +779,7 @@ footer a:hover {
   justify-content: space-between;
   align-items: center;
   font-family: "Elza Narrow", sans-serif;
-  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-size: clamp(1rem, 3vw, 2rem);
   font-weight: bold;
 }
 
@@ -811,6 +816,24 @@ footer a:hover {
 #q3:checked ~ .faq:nth-child(6),
 #q4:checked ~ .faq:nth-child(8) {
   background-color: #168ed9;
+}
+
+.question i:last-child {
+  display: none;
+}
+
+#q1:checked ~ .faq:nth-child(2) i:last-child,
+#q2:checked ~ .faq:nth-child(4) i:last-child,
+#q3:checked ~ .faq:nth-child(6) i:last-child,
+#q4:checked ~ .faq:nth-child(8) i:last-child {
+  display: contents;
+}
+
+#q1:checked ~ .faq:nth-child(2) i:first-of-type,
+#q2:checked ~ .faq:nth-child(4) i:first-of-type,
+#q3:checked ~ .faq:nth-child(6) i:first-of-type,
+#q4:checked ~ .faq:nth-child(8) i:first-of-type {
+  display: none;
 }
 
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
@@ -987,5 +1010,31 @@ footer a:hover {
 
   .about-content .read-btn {
     display: none;
+  }
+
+  /*-----contact styling-----*/
+
+  .contact-container {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+  }
+
+  #faq-header {
+    grid-area: 1/1/2/2;
+  }
+
+  #contact-header {
+    grid-area: 1/2/2/3;
+  }
+
+  .faq-content .question {
+    font-size: 1.2rem;
+  }
+
+  .faq-content .desc {
+    font-size: 1rem;
   }
 }
