@@ -165,7 +165,7 @@ h3 {
 }
 
 .logo img {
-  max-height: 100px;
+  max-height: 4rem;
 }
 
 header {
@@ -845,6 +845,10 @@ footer a:hover {
   .logo {
     grid-area: 1/1/2/2;
     width: 190px;
+  }
+
+  .logo img {
+    max-height: 100px;
   }
 
   nav {
