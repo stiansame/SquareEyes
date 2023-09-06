@@ -1,60 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/wgh0tdc.css">
-    <link href="../css/styles.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2072bb14b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://use.typekit.net/wgh0tdc.css" />
+    <link href="../css/styles.css" rel="stylesheet" />
     <title>SquareEyes - Home</title>
-</head>
-
-<body>
-    <header>
-        <img src="../images/logo.png" alt="Logo for SquareEyes website" />
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="../images/SquareEyes_logo.svg"
+              alt="Logo for SquareEyes website"
+          /></a>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
         <nav>
-            <ul>
-                <li><a href="../pages/movies.html">movies</a></li>
-                <li><a href="../pages/about.html">about</a></li>
-                <li><a href="../pages/contact.html">contact</a></li>
-                <li><a href="../pages/shopping_cart.html">shoppingcart</a></li>
-                <li><a href="../pages/player.html">player</a></li>
-                <li><a href="../pages/login.html">login</a></li>
-            </ul>
+          <div class="menu-container">
+            <div class="menu-item" id="hide">
+              <a href="../index.html">home</a>
+            </div>
+            <div class="menu-item active">
+              <a href="../pages/movies.html"><h1>movies</h1></a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/about.html">about</a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/contact.html">contact</a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/shopping_cart.html"
+                ><span>shopping cart</span
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/player.html"
+                ><span>player</span><i class="fa-regular fa-circle-play"></i
+              ></a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/login.html"
+                ><span>login</span><i class="fa-solid fa-user"></i
+              ></a>
+            </div>
+          </div>
         </nav>
-    </header>
-    <main>
-        <section class="hero">
-            Hero
-        </section>
-        <section class="featured">
-            Featured
-        </section>
-        <section class="banner">
-            Banner
-        </section>
-        <section class="New">
-            New Arrivals
-        </section>
-        <section class="reviews">
-            User Reviews
-        </section>
-    </main>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <i class="fas fa-bars"></i>
+          <i class="fa-solid fa-x"></i>
+        </label>
+      </header>
+    </div>
+    <movies>
+      <section class="ondisplay">
+        <div class="films">
+          <div class="heading_1">
+            Featured films <i class="fa-solid fa-circle-chevron-right"></i>
+          </div>
+          <div class="movie-carousel">
+            <div class="movie one">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/Square_Eyes_Cover2.jpeg"
+                  alt="Godzilla - King of the monsters movie poster showing Godzilla kneedeep in the ocean with its head arched upwards and blue flames coming out of its mouth"
+              /></a>
+            </div>
+            <div class="movie two">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover5.jpeg"
+                  alt="Sweetheart movie poster showing african american woman from behind with water to her chest and looking back over her left shoulder"
+              /></a>
+            </div>
+            <div class="movie three">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover1.jpeg"
+                  alt="Hobbs and Shaw movie poster showing stylized images of the movie's main charecters"
+              /></a>
+            </div>
+            <div class="movie four">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover3.jpeg"
+                  alt="Onece upon a time in Hollywood movie poster showing showing stylized images of the movie's main characters"
+              /></a>
+            </div>
+            <div class="movie five">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover7.jpeg"
+                  alt="The Batman movie poster showing Bruce Wayne in the foreground with the batmobile and a city in flames in the background"
+              /></a>
+            </div>
+            <div class="movie six">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover4.jpeg"
+                  alt="Scream movie poster showing Ghostface and the movie's main characters looking straight at the viewer"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="Ondisplay two">
+        <div class="films">
+          <div class="heading_1">
+            Top rated films <i class="fa-solid fa-circle-chevron-right"></i>
+          </div>
+          <div class="movie-carousel">
+            <div class="movie one">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/Square_Eyes_Cover2.jpeg"
+                  alt="Godzilla - King of the monsters movie poster showing Godzilla kneedeep in the ocean with its head arched upwards and blue flames coming out of its mouth"
+              /></a>
+            </div>
+            <div class="movie two">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover5.jpeg"
+                  alt="Sweetheart movie poster showing african american woman from behind with water to her chest and looking back over her left shoulder"
+              /></a>
+            </div>
+            <div class="movie three">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover1.jpeg"
+                  alt="Hobbs and Shaw movie poster showing stylized images of the movie's main charecters"
+              /></a>
+            </div>
+            <div class="movie four">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover3.jpeg"
+                  alt="Onece upon a time in Hollywood movie poster showing showing stylized images of the movie's main characters"
+              /></a>
+            </div>
+            <div class="movie five">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover7.jpeg"
+                  alt="The Batman movie poster showing Bruce Wayne in the foreground with the batmobile and a city in flames in the background"
+              /></a>
+            </div>
+            <div class="movie six">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover4.jpeg"
+                  alt="Scream movie poster showing Ghostface and the movie's main characters looking straight at the viewer"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Ondisplay three">
+        <div class="films">
+          <div class="heading_1">
+            New Releases <i class="fa-solid fa-circle-chevron-right"></i>
+          </div>
+          <div class="movie-carousel">
+            <div class="movie one">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/Square_Eyes_Cover2.jpeg"
+                  alt="Godzilla - King of the monsters movie poster showing Godzilla kneedeep in the ocean with its head arched upwards and blue flames coming out of its mouth"
+              /></a>
+            </div>
+            <div class="movie two">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover5.jpeg"
+                  alt="Sweetheart movie poster showing african american woman from behind with water to her chest and looking back over her left shoulder"
+              /></a>
+            </div>
+            <div class="movie three">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover1.jpeg"
+                  alt="Hobbs and Shaw movie poster showing stylized images of the movie's main charecters"
+              /></a>
+            </div>
+            <div class="movie four">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover3.jpeg"
+                  alt="Onece upon a time in Hollywood movie poster showing showing stylized images of the movie's main characters"
+              /></a>
+            </div>
+            <div class="movie five">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover7.jpeg"
+                  alt="The Batman movie poster showing Bruce Wayne in the foreground with the batmobile and a city in flames in the background"
+              /></a>
+            </div>
+            <div class="movie six">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover4.jpeg"
+                  alt="Scream movie poster showing Ghostface and the movie's main characters looking straight at the viewer"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Ondisplay four">
+        <div class="films">
+          <div class="heading_1">
+            Random Selection <i class="fa-solid fa-circle-chevron-right"></i>
+          </div>
+          <div class="movie-carousel">
+            <div class="movie one">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/Square_Eyes_Cover2.jpeg"
+                  alt="Godzilla - King of the monsters movie poster showing Godzilla kneedeep in the ocean with its head arched upwards and blue flames coming out of its mouth"
+              /></a>
+            </div>
+            <div class="movie two">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover5.jpeg"
+                  alt="Sweetheart movie poster showing african american woman from behind with water to her chest and looking back over her left shoulder"
+              /></a>
+            </div>
+            <div class="movie three">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover1.jpeg"
+                  alt="Hobbs and Shaw movie poster showing stylized images of the movie's main charecters"
+              /></a>
+            </div>
+            <div class="movie four">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover3.jpeg"
+                  alt="Onece upon a time in Hollywood movie poster showing showing stylized images of the movie's main characters"
+              /></a>
+            </div>
+            <div class="movie five">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover7.jpeg"
+                  alt="The Batman movie poster showing Bruce Wayne in the foreground with the batmobile and a city in flames in the background"
+              /></a>
+            </div>
+            <div class="movie six">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover4.jpeg"
+                  alt="Scream movie poster showing Ghostface and the movie's main characters looking straight at the viewer"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Ondisplay five">
+        <div class="films">
+          <div class="heading_1">
+            Watch Again <i class="fa-solid fa-circle-chevron-right"></i>
+          </div>
+          <div class="movie-carousel">
+            <div class="movie one">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/Square_Eyes_Cover2.jpeg"
+                  alt="Godzilla - King of the monsters movie poster showing Godzilla kneedeep in the ocean with its head arched upwards and blue flames coming out of its mouth"
+              /></a>
+            </div>
+            <div class="movie two">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover5.jpeg"
+                  alt="Sweetheart movie poster showing african american woman from behind with water to her chest and looking back over her left shoulder"
+              /></a>
+            </div>
+            <div class="movie three">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover1.jpeg"
+                  alt="Hobbs and Shaw movie poster showing stylized images of the movie's main charecters"
+              /></a>
+            </div>
+            <div class="movie four">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover3.jpeg"
+                  alt="Onece upon a time in Hollywood movie poster showing showing stylized images of the movie's main characters"
+              /></a>
+            </div>
+            <div class="movie five">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover7.jpeg"
+                  alt="The Batman movie poster showing Bruce Wayne in the foreground with the batmobile and a city in flames in the background"
+              /></a>
+            </div>
+            <div class="movie six">
+              <a href="pages/movie_details.html"
+                ><img
+                  src="../images/first-year-cross-course-assignment-brief-two-master/assets/Square_Eyes_Cover4.jpeg"
+                  alt="Scream movie poster showing Ghostface and the movie's main characters looking straight at the viewer"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>-->
+    </movies>
     <footer>
+      <div>
         <ul>
-            <li><a href="http://youtube.com"><img src="../images/some/Youtube.png"></a></li>
-            <li><a href="http://Discord.com"><img src="../images/some/Discord.png"></a></li>
-            <li><a href="http://Facebook.com"><img src="../images/some/Facebook.png"></a></li>
-            <li><a href="http://instagram.com"><img src="../images/some/Instagram.png"></a></li>
-            <li><a href="http://snapchat.com"><img src="../images/some/SnapChat.png"></a></li>
-            <li><a href="http://twitter.com"><img src="../images/some/Twitter.png"></a></li>
+          <li>
+            <a href="http://youtube.com"
+              ><img src="../images/some/Youtube.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://Discord.com"
+              ><img src="../images/some/Discord.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://Facebook.com"
+              ><img src="../images/some/Facebook.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://instagram.com"
+              ><img src="../images/some/Instagram.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://snapchat.com"
+              ><img src="../images/some/SnapChat.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://twitter.com"
+              ><img src="../images/some/Twitter.png"
+            /></a>
+          </li>
         </ul>
         <p>2023 Stian Rostad &copy;</p>
-        <p>All images found on <a href="www.movieposters.com">www.movieposters.com</a> or <a
-                href="www.cinematerial.com">www.cinematerial.com</a></p>
-        <p>All icons found on <a href="www.flaticon.com">www.flaticon.com</a></p>
+        <p>
+          All images found on
+          <a href="www.movieposters.com">www.movieposters.com</a> or
+          <a href="www.cinematerial.com">www.cinematerial.com</a>
+        </p>
+        <p>
+          All icons found on <a href="www.flaticon.com">www.flaticon.com</a>
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
