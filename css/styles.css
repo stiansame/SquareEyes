@@ -19,11 +19,13 @@ html {
   background: linear-gradient(#363638 0%, #161618 75%);
   background-size: cover;
   color: white;
+  min-height: 100dvh;
 }
 
 body {
   font-family: "Elza narrow", sans-serif;
   font-weight: normal;
+  min-height: 100dvh;
 }
 
 .header-container {
@@ -268,6 +270,8 @@ nav .menu-item:hover {
 /*footer starts here*/
 
 footer {
+  position: sticky;
+  top: 100%;
   background: var(--menu-bg);
   padding: 1rem;
   margin: 4rem 0rem 0rem;
