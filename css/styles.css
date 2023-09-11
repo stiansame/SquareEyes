@@ -1155,4 +1155,49 @@ footer a:hover {
   moviedetails {
     grid-template-columns: 2rem auto 2rem;
   }
+
+  .details-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .det_img {
+    grid-area: 1/1/2/2;
+    object-fit: cover;
+    object-position: center top;
+    max-height: 100%;
+  }
+
+  .description-container {
+    grid-area: 1/2/2/3;
+  }
+
+  #trailer {
+    grid-area: 2/1/3/3;
+  }
+
+  .trailer {
+    grid-area: 3/1/4/3;
+  }
+
+  #review {
+    grid-area: 4/1/5/3;
+  }
+
+  .details-container .user-reviews {
+    grid-area: 5/1/6/3;
+  }
+
+  .actions {
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  .description-container .desc {
+    font-size: 1.2rem;
+  }
+
+  .description-container .cta_button {
+    font-size: 1.2rem;
+  }
 }
