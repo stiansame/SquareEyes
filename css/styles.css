@@ -872,9 +872,8 @@ footer a:hover {
 .detail-header {
   grid-area: 1/2/2/3;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(153px, auto));
-  row-gap: 0.5rem;
-  column-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(163px, auto));
+  gap: 0.5rem;
   align-items: end;
   justify-content: start;
   margin-top: 2rem;
@@ -1152,4 +1151,8 @@ footer a:hover {
   }
 
   /*-----Movie details-----*/
+
+  moviedetails {
+    grid-template-columns: 2rem auto 2rem;
+  }
 }
