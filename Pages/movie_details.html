@@ -1,60 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/wgh0tdc.css">
-    <link href="../css/styles.css" rel="stylesheet">
-    <title>SquareEyes - Home</title>
-</head>
-
-<body>
-    <header>
-        <img src="../images/logo.png" alt="Logo for SquareEyes website" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2072bb14b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://use.typekit.net/wgh0tdc.css" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <title>SquareEyes - Movie Details</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="../images/SquareEyes_logo.svg"
+              alt="Logo for SquareEyes website"
+          /></a>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
         <nav>
-            <ul>
-                <li><a href="../pages/movies.html">movies</a></li>
-                <li><a href="../pages/about.html">about</a></li>
-                <li><a href="../pages/contact.html">contact</a></li>
-                <li><a href="../pages/shopping_cart.html">shoppingcart</a></li>
-                <li><a href="../pages/player.html">player</a></li>
-                <li><a href="../pages/login.html">login</a></li>
-            </ul>
+          <div class="menu-container">
+            <div class="menu-item" id="hide">
+              <a href="../index.html">home</a>
+            </div>
+            <div class="menu-item active">
+              <a href="../pages/movies.html"><h1>movies</h1></a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/about.html">about</a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/contact.html">contact</a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/shopping_cart.html"
+                ><span>shopping cart</span
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/player.html"
+                ><span>player</span><i class="fa-regular fa-circle-play"></i
+              ></a>
+            </div>
+            <div class="menu-item">
+              <a href="../pages/login.html"
+                ><span>login</span><i class="fa-solid fa-user"></i
+              ></a>
+            </div>
+          </div>
         </nav>
-    </header>
-    <main>
-        <section class="hero">
-            Hero
-        </section>
-        <section class="featured">
-            Featured
-        </section>
-        <section class="banner">
-            Banner
-        </section>
-        <section class="New">
-            New Arrivals
-        </section>
-        <section class="reviews">
-            User Reviews
-        </section>
-    </main>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <i class="fas fa-bars"></i>
+          <i class="fa-solid fa-x"></i>
+        </label>
+      </header>
+    </div>
+    <moviedetails>
+      <div class="detail-header">
+        <div class="heading_1">Dunkirk</div>
+        <div class="meta">2017 | 12 | 106 minutes</div>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+      <div class="details-container">
+        <img class="det_img" src="../images/Dunkirk4.jpg" />
+        <div class="description-container">
+          <span
+            ><p class="desc">
+              Allied soldiers are surrounded by German forces and trapped on the
+              beaches of Dunkirk during World War II. The film follows three
+              separate storylines: one on land, one at sea, and one in the air.
+              <br />
+              Over the course of a week, the soldiers desperately try to
+              evacuate the beach, while civilians in small boats attempt to
+              rescue them. The film is a stunning tribute to the bravery and
+              resilience of those involved in the Dunkirk evacuation.
+            </p></span
+          >
+          <span>
+            <p class="desc"><b>Director</b> Christopher Nolan</p>
+          </span>
+          <span>
+            <p class="desc"><b>Writer</b> Christopher Nolan</p>
+          </span>
+          <span>
+            <p class="desc">
+              <b>Starring</b> Fionn Whitehead | Barry Keoghan | Tom Hardy |
+              Cillian Murphy
+            </p>
+          </span>
+          <div class="actions">
+            <div class="cta_button">
+              <a href="#">Add to Cart (view)</a>
+            </div>
+            <div class="cta_button">
+              <a href="#">Add to Cart (buy)</a>
+            </div>
+          </div>
+        </div>
+        <span><h3>View Trailer</h3></span>
+        <div class="trailer">
+          <embed
+            src="https://www.youtube.com/embed/T7O7BtBnsG4?autoplay=0"
+            height="100%"
+            width="100%"
+            tittle="Dunkirk Trailer"
+          />
+        </div>
+        <span><h3>Latest Reviews</h3></span>
+      </div>
+    </moviedetails>
     <footer>
+      <div>
         <ul>
-            <li><a href="http://youtube.com"><img src="../images/some/Youtube.png"></a></li>
-            <li><a href="http://Discord.com"><img src="../images/some/Discord.png"></a></li>
-            <li><a href="http://Facebook.com"><img src="../images/some/Facebook.png"></a></li>
-            <li><a href="http://instagram.com"><img src="../images/some/Instagram.png"></a></li>
-            <li><a href="http://snapchat.com"><img src="../images/some/SnapChat.png"></a></li>
-            <li><a href="http://twitter.com"><img src="../images/some/Twitter.png"></a></li>
+          <li>
+            <a href="http://youtube.com" target="new"
+              ><img src="../images/some/Youtube.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://Discord.com" target="new"
+              ><img src="../images/some/Discord.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://Facebook.com" target="new"
+              ><img src="../images/some/Facebook.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://instagram.com" target="new"
+              ><img src="../images/some/Instagram.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://snapchat.com" target="new"
+              ><img src="../images/some/SnapChat.png"
+            /></a>
+          </li>
+          <li>
+            <a href="http://twitter.com" target="new"
+              ><img src="../images/some/Twitter.png"
+            /></a>
+          </li>
         </ul>
         <p>2023 Stian Rostad &copy;</p>
-        <p>All images found on <a href="www.movieposters.com">www.movieposters.com</a> or <a
-                href="www.cinematerial.com">www.cinematerial.com</a></p>
-        <p>All icons found on <a href="www.flaticon.com">www.flaticon.com</a></p>
+        <p>
+          All images found on
+          <a href="http://www.movieposters.com" target="new"
+            >www.movieposters.com</a
+          >
+          or
+          <a href="http://www.cinematerial.com" target="new"
+            >www.cinematerial.com</a
+          >
+        </p>
+        <p>
+          All icons found on
+          <a href="http://www.flaticon.com" target="new">www.flaticon.com</a>
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
