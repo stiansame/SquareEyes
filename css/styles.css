@@ -899,7 +899,6 @@ footer a:hover {
   max-height: 20rem;
   object-fit: cover;
   object-position: top;
-  border: #edeae6 solid 1px;
 }
 
 .description-container {
@@ -909,7 +908,7 @@ footer a:hover {
   gap: 0.5rem;
 }
 
-.details-container .desc {
+.details-container .description-container .desc {
   grid-area: 1/1/2/2;
   padding-top: 1rem;
 }
@@ -931,6 +930,10 @@ footer a:hover {
   aspect-ratio: 16/9;
   margin: 2rem 0rem;
   overflow: hidden;
+}
+
+.details-container .user-reviews {
+  margin: 2rem 0rem;
 }
 
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
