@@ -334,8 +334,6 @@ footer a:hover {
   width: 0;
   transition: width 0.3s linear;
   padding: 0;
-  /*overflow: hidden;
-		white-space: nowrap;*/
 }
 .slide > * {
   transition: transform 0.15s linear;
@@ -893,7 +891,6 @@ footer a:hover {
 }
 
 .det_img {
-  grid-area: 1/1/2/2;
   width: 100%;
   max-height: 20rem;
   object-fit: cover;
@@ -933,6 +930,64 @@ footer a:hover {
 
 .details-container .user-reviews {
   margin: 2rem 0rem;
+}
+
+/*--- slider here!---*/
+
+.movie-slider {
+  grid-area: 1/1/2/2;
+  position: relative;
+  width: 100%;
+  max-height: 25rem;
+  overflow: hidden;
+}
+
+/*.movie-slider .s1,
+.movie-slider .s2,
+.movie-slider .s3,
+.movie-slider .s4 {
+  background-position: top center;
+  background-size: cover;
+}*/
+
+.bullets {
+  display: flex;
+  gap: 1.5rem;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.bullets label {
+  height: 1rem;
+  width: 1rem;
+  background-color: #e6eef2;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.8));
+}
+
+#slide-1:checked ~ .s1,
+#slide-2:checked ~ .s2,
+#slide-3:checked ~ .s3,
+#slide-4:checked ~ .s4 {
+  width: 100%;
+}
+#slide-1:checked ~ .s1 > *,
+#slide-2:checked ~ .s2 > *,
+#slide-3:checked ~ .s3 > *,
+#slide-4:checked ~ .s4 > * {
+  transform: scale(1);
+}
+
+#slide-1:checked ~ .bullets label[for="slide-1"],
+#slide-2:checked ~ .bullets label[for="slide-2"],
+#slide-3:checked ~ .bullets label[for="slide-3"],
+#slide-4:checked ~ .bullets label[for="slide-4"] {
+  width: 4.5rem;
+  background-color: #168ed9;
 }
 
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
@@ -1161,8 +1216,10 @@ footer a:hover {
     gap: 1rem;
   }
 
-  .det_img {
+  .movie-slider {
     grid-area: 1/1/2/2;
+  }
+  .det_img {
     object-fit: cover;
     object-position: center top;
     max-height: 100%;
