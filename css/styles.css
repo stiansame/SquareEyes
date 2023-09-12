@@ -942,13 +942,17 @@ footer a:hover {
   overflow: hidden;
 }
 
-/*.movie-slider .s1,
-.movie-slider .s2,
-.movie-slider .s3,
-.movie-slider .s4 {
-  background-position: top center;
-  background-size: cover;
-}*/
+.movie-slide {
+  float: left;
+  height: 100%;
+  width: 0%;
+  transition: width 0.15s ease-in-out;
+  padding: 0;
+}
+.movie-slide > * {
+  transition: transform 0.15s;
+  transform: scale(1);
+}
 
 .bullets {
   display: flex;
@@ -1213,6 +1217,7 @@ footer a:hover {
 
   .details-container {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(400px, auto) repeat(5, auto);
     gap: 1rem;
   }
 
@@ -1223,6 +1228,7 @@ footer a:hover {
     object-fit: cover;
     object-position: center top;
     max-height: 100%;
+    max-width: 100%;
   }
 
   .description-container {
@@ -1251,7 +1257,7 @@ footer a:hover {
   }
 
   .description-container .desc {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 20px, 1.2rem);
   }
 
   .description-container .cta_button {
