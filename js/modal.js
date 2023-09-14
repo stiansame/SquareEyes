@@ -1,5 +1,5 @@
-const modal = document.querySelector("#modal");
-const openModal = document.querySelector(".rent", ".buy");
+const modal = document.querySelector("#AddtoCart");
+const openModal = document.querySelector(".rent");
 const closeModal = document.querySelector(".close-button");
 
 openModal.addEventListener("click", () => {
