@@ -1066,7 +1066,8 @@ footer a:hover {
 }
 
 .modal::backdrop {
-  backdrop-filter: blur(50px);
+  background: black;
+  opacity: 0.9;
 
 }
 
@@ -1363,4 +1364,14 @@ footer a:hover {
   .description-container .cta_button {
     font-size: 1.2rem;
   }
+
+
+/*--modal--*/
+
+.modal::backdrop {
+  background: none;
+  opacity: 1;
+  backdrop-filter: blur(50px);
+}
+
 }
