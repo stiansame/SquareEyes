@@ -610,6 +610,10 @@ footer a:hover {
 
 /* --Reviews start here----*/
 
+.reviews h1 {
+  margin-top: 2rem;
+}
+
 .user-reviews {
   display: grid;
   grid-template-rows: repeat(2, auto);
