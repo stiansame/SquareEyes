@@ -108,6 +108,10 @@ moviedetails {
   font-weight: bold;
 }
 
+.hidden_header {
+  display:none !important;
+}
+
 h1 {
   font-family: "niveau-grotesk", sans-serif;
   font-size: clamp(1.8rem, 6vw, 3rem);
@@ -568,7 +572,7 @@ footer a:hover {
   width: 100%;
 }
 
-.new-arrivals .heading_1 {
+.new-arrivals h1{
   color: #373738;
   padding-bottom: 1rem;
 }
