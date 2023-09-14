@@ -1061,11 +1061,13 @@ footer a:hover {
   transform: translate(-50%, -50%);
   background: transparent;
   color: #e6eef2;
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));
+
 }
 
 .modal::backdrop {
-  background-color: black;
-  opacity: 0.8;
+  backdrop-filter: blur(50px);
+
 }
 
 .popup a .cta_button {
