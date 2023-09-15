@@ -40,7 +40,8 @@ main,
 movies,
 about,
 contact,
-moviedetails {
+moviedetails,
+mypage {
   width: 100%;
   display: grid;
   grid-template-columns: 1rem 1fr 1rem;
@@ -1115,8 +1116,13 @@ form {
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
 
 @media screen and (min-width: 850px) {
-  main {
-    grid-template-columns: 2rem 1fr 2rem;
+  main,
+  movies,
+  about,
+  contact,
+  moviedetails,
+  mypage {
+    grid-template-columns: 2rem auto 2rem;
   }
 
   footer {
@@ -1229,9 +1235,6 @@ form {
 
   /*new arrivals & Movies styling*/
 
-  movies {
-    grid-template-columns: 2rem auto 2rem;
-  }
 
   /*review styling*/
 
@@ -1265,7 +1268,6 @@ form {
   /*About us styling-----*/
 
   about {
-    grid-template-columns: 2rem auto 2rem;
     grid-template-rows: auto auto 10rem auto auto;
   }
 
@@ -1299,10 +1301,6 @@ form {
 
   /*-----contact styling-----*/
 
-  contact {
-    grid-template-columns: 2rem auto 2rem;
-  }
-
   .contact-container {
     display: grid;
     align-items: start;
@@ -1328,10 +1326,6 @@ form {
   }
 
   /*-----Movie details-----*/
-
-  moviedetails {
-    grid-template-columns: 2rem auto 2rem;
-  }
 
   .details-container {
     grid-template-columns: 1fr 1fr;
