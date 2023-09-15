@@ -57,7 +57,8 @@ movies {
   grid-template-rows: repeat(5, auto);
 }
 
-moviedetails {
+moviedetails,
+mypage {
   grid-template-rows: repeat(2, auto);
 }
 .hero {
@@ -808,6 +809,8 @@ form {
   justify-content: space-around;
 }
 
+/*--- FAQ & Mypage Accordion ---*/
+
 .faq-content {
   display: grid;
   width: 100%;
@@ -816,6 +819,14 @@ form {
   gap: 1rem;
   align-items: start;
   filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));
+}
+
+.faq-content a {
+  color:#161618;
+}
+
+.faq-content a:hover {
+  color: #168ed9;
 }
 
 .faq-content input[type="radio"] {
@@ -843,6 +854,7 @@ form {
 
 .faq-content .question label {
   cursor: pointer;
+  width: 100%;
 }
 
 .faq-content .answer {
@@ -1111,6 +1123,19 @@ form {
   grid-template-rows: repeat(3, auto);
   justify-items: center;
   gap: 1rem;
+}
+
+
+/*---MY PAGE---*/
+
+.mypage-content{
+  display:grid;
+  grid-area: 1/2/2/3;
+}
+
+.mypage-content h1 {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
