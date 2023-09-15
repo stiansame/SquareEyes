@@ -1168,7 +1168,7 @@ form {
     opacity: 1;
   }
 
-  nav #hide {
+  .hide {
     display: none;
   }
 

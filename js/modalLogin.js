@@ -1,7 +1,6 @@
 const updateButton = document.getElementById("loginBtn");
 const cancelButton = document.getElementById("cancelBtn");
 const dialog = document.getElementById("loginDialog");
-dialog.returnValue = "favAnimal";
 
 function openCheck(dialog) {
   if (dialog.open) {
