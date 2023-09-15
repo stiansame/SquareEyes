@@ -531,8 +531,10 @@ footer a:hover {
   gap: 1rem;
 }
 
+.mypage-content .cta_button:hover,
 .cta_container .cta_button:hover {
   outline: #168ed9 2px solid;
+  color: #168ed9;
 }
 /*Banner ends here!*/
 
@@ -776,6 +778,7 @@ form {
   padding: 0.5rem;
   font-family: "elza narrow", sans-serif;
   font-size: clamp(1rem, 2dvw, 1.5rem);
+  border:none;
 }
 
 .form__input:hover,
@@ -789,6 +792,7 @@ form {
   font-size: clamp(1.2rem, 3dvw, 2rem);
 }
 
+.mypage-content .cta_button, /*MY Page Personal information CTA-button */
 .contact-form .cta_button {
   grid-area: 4/2/5/3;
   justify-self: end;
@@ -1137,6 +1141,16 @@ form {
   margin-top: 2rem;
   padding-bottom: 1rem;
 }
+
+.mypage-content .form__input {
+  border:#168ed9 solid 1px;
+}
+
+.mypage-content .actions {
+  grid-area: 4/2/5/3;
+  justify-self: end;
+}
+
 
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
 
