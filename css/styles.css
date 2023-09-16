@@ -95,7 +95,6 @@ shoppingcart {
   flex-direction: column;
   grid-area: 1/2/4/3;
   z-index: 2;
-  /*margin-top: 2rem;*/
 }
 
 .about-banner {
@@ -160,7 +159,7 @@ h3 {
 .cta_button a {
   text-decoration: none;
   color: #e6eef2;
-  /*padding: 1rem 2rem;*/
+
 }
 
 .cta_button a:hover {
@@ -789,9 +788,6 @@ footer a:hover {
   grid-area: 1/2/2/3;
 }
 
-/*.contact-container .heading_1 {
-  margin-top: 2rem;
-}*/
 
 .contact-form {
   padding: 1rem;
@@ -954,7 +950,7 @@ form {
   gap: 0.5rem;
   align-items: end;
   justify-content: start;
-  /*margin-top: 2rem;*/
+
 }
 
 .details-container {
@@ -1180,11 +1176,6 @@ form {
   grid-area: 1/2/2/3;
 }
 
-/*.mypage-content h1 {
-  margin-top: 2rem;
-  padding-bottom: 1rem;
-}*/
-
 .mypage-content .form__input {
   border:#168ed9 solid 1px;
 }
@@ -1229,7 +1220,7 @@ player h3 {
   justify-items: center;
   gap:1rem;
   background: #e6eef2;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .library img,
@@ -1271,6 +1262,8 @@ player h3 {
     padding: 1rem 1rem 1.5rem;
     background: var(--menu-bg);
     justify-items: end;
+    filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));
+
   }
 
   .cart-container span {
@@ -1513,7 +1506,7 @@ player h3 {
     align-items: start;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 1rem;
+    column-gap: 3rem;
   }
 
   #faq-header {
