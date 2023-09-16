@@ -950,10 +950,12 @@ form {
   gap: 0.5rem;
   align-items: end;
   justify-content: start;
+  margin-top: 2rem;
 
 }
 
 .details-container {
+  margin-top: 1rem;
   grid-area: 2/2/3/3;
   background: var(--menu-bg);
   padding: 1rem;
@@ -1526,6 +1528,10 @@ player h3 {
   }
 
   /*-----Movie details-----*/
+
+  .detail-header {
+    grid-template-columns: repeat(auto-fill, minmax(185px, auto));
+  }
 
   .details-container {
     grid-template-columns: 1fr 1fr;
