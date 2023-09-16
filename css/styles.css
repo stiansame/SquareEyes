@@ -43,7 +43,8 @@ about,
 contact,
 moviedetails,
 mypage,
-player {
+player,
+shoppingcart {
   width: 100%;
   display: grid;
   grid-template-columns: 1rem 1fr 1rem;
@@ -61,7 +62,8 @@ movies {
 
 moviedetails,
 mypage,
-player {
+player,
+shoppingcart {
   grid-template-rows: repeat(2, auto);
 }
 
@@ -93,7 +95,7 @@ player {
   flex-direction: column;
   grid-area: 1/2/4/3;
   z-index: 2;
-  margin-top: 2rem;
+  /*margin-top: 2rem;*/
 }
 
 .about-banner {
@@ -181,6 +183,19 @@ a:hover {
   color: #168ed9;
   align-self: center;
 }
+
+main h1,
+movies h1,
+about h1,
+contact h1,
+moviedetails h1,
+mypage h1,
+player h1,
+shoppingcart h1 {
+  margin: 2rem 0rem 1rem;
+
+}
+
 
 /*Universal ends here!*/
 
@@ -562,9 +577,6 @@ footer a:hover {
 
 /*---New arrivals & Movies--- */
 
-.films {
-  margin-top: 2rem;
-}
 
 .featuredfilms {
   grid-area: 1/2/2/3;
@@ -777,9 +789,9 @@ footer a:hover {
   grid-area: 1/2/2/3;
 }
 
-.contact-container .heading_1 {
+/*.contact-container .heading_1 {
   margin-top: 2rem;
-}
+}*/
 
 .contact-form {
   padding: 1rem;
@@ -942,7 +954,7 @@ form {
   gap: 0.5rem;
   align-items: end;
   justify-content: start;
-  margin-top: 2rem;
+  /*margin-top: 2rem;*/
 }
 
 .details-container {
@@ -1145,7 +1157,8 @@ form {
 
 .popup img,
 .library img,
-.faq img {
+.faq img,
+.cart-content img {
   max-height: 300px;
   border-radius: 0.2rem;
   outline: #168ed9 solid 1px;
@@ -1167,10 +1180,10 @@ form {
   grid-area: 1/2/2/3;
 }
 
-.mypage-content h1 {
+/*.mypage-content h1 {
   margin-top: 2rem;
   padding-bottom: 1rem;
-}
+}*/
 
 .mypage-content .form__input {
   border:#168ed9 solid 1px;
@@ -1191,7 +1204,6 @@ form {
 
 player .heading_1{
   grid-area: 1/2/2/3;
-  margin: 2rem 0rem 1rem;
 }
 
 .player-content {
@@ -1210,7 +1222,8 @@ player h3 {
   margin-top: 1rem;
 }
 
-.library-content {
+.library-content,
+.cart-content {
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(min(9rem, 100%),1fr));
   justify-items: center;
@@ -1220,7 +1233,8 @@ player h3 {
 }
 
 .library img,
-.faq img{
+.faq img,
+.cart-content img{
   outline:none;
   max-height: 200px;
   min-width: fit-content;
@@ -1239,6 +1253,35 @@ player h3 {
     cursor: default;
   }
 
+  /*--- Shopping cart ---*/
+
+  shoppingcart .heading_1 {
+    grid-area: 1/2/2/3;
+  }
+
+  .cart-content{
+    width: 100%;
+  }
+ 
+  .cart-container {
+    display:grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 1rem;
+    grid-area: 2/2/3/3;
+    padding: 1rem 1rem 1.5rem;
+    background: var(--menu-bg);
+    justify-items: end;
+  }
+
+  .cart-container span {
+    width: 100%;
+    text-align: right;
+    border-bottom: #1c4b67 solid 2px;
+  }
+
+  .cart-container .cta_button {
+    display: inline;
+  }
 
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
 
@@ -1249,7 +1292,8 @@ player h3 {
   contact,
   moviedetails,
   mypage,
-  player {
+  player,
+  shoppingcart {
     grid-template-columns: 2rem auto 2rem;
   }
 
@@ -1426,7 +1470,7 @@ player h3 {
     font-size: clamp(1.2rem, 2dvw, 1.5rem);
   }
 
-  /*--- Review styling enbd */
+  /*--- Review styling end */
 
   /*About us styling-----*/
 
