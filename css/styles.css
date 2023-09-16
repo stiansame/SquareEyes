@@ -11,6 +11,10 @@
   --menu-bg: #363638;
 }
 
+span {
+  border-bottom: #1c4b67 solid 2px;
+}
+
 html {
   margin: 0 auto;
   max-width: 1640px;
@@ -41,7 +45,8 @@ movies,
 about,
 contact,
 moviedetails,
-mypage {
+mypage,
+player {
   width: 100%;
   display: grid;
   grid-template-columns: 1rem 1fr 1rem;
@@ -58,9 +63,11 @@ movies {
 }
 
 moviedetails,
-mypage {
+mypage,
+player {
   grid-template-rows: repeat(2, auto);
 }
+
 .hero {
   grid-area: 1/1/3/4;
 }
@@ -973,7 +980,7 @@ form {
   padding-top: 1rem;
 }
 
-.details-container span {
+.details-container span{
   border-bottom: #1c4b67 2px solid;
 }
 
@@ -1139,7 +1146,8 @@ form {
   border-radius: 0.2rem;
 }
 
-.popup img {
+.popup img,
+.library img {
   max-height: 300px;
   border-radius: 0.2rem;
   outline: #168ed9 solid 1px;
@@ -1179,9 +1187,55 @@ form {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(8rem, 100%),1fr));
   row-gap:1rem;
-
-
 }
+
+/*--- PLAYER---*/
+
+player .heading_1{
+  grid-area: 1/2/2/3;
+  margin: 2rem 0rem 1rem;
+}
+
+.player-content {
+  grid-area: 2/2/3/3;
+  background: var(--menu-bg);
+  padding:1rem;
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));
+}
+
+
+.library {
+  background: var(--menu-bg);
+  margin-top: 1rem;
+}
+
+.library-content {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(9rem, 100%),1fr));
+  justify-items: center;
+  gap:1rem;
+  background: #e6eef2;
+  padding: 1rem;
+}
+
+.library img{
+  outline:none;
+  max-height: 200px;
+  min-width: fit-content;
+  cursor: pointer;
+}
+.library img:hover {
+  outline: #168ed9 solid 2px;
+}
+
+.library-content .inactive {
+  filter:saturate(.2) blur(1px);
+  }
+
+  .library-content .inactive:hover{
+    outline: none;
+    cursor: default;
+  }
 
 
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
@@ -1192,7 +1246,8 @@ form {
   about,
   contact,
   moviedetails,
-  mypage {
+  mypage,
+  player {
     grid-template-columns: 2rem auto 2rem;
   }
 
@@ -1488,6 +1543,12 @@ form {
   background: none;
   opacity: 1;
   backdrop-filter: blur(50px);
+}
+
+/*---player---*/
+
+.player-content {
+  grid-area: 2/2/3/3;
 }
 
 }
