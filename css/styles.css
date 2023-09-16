@@ -1170,6 +1170,14 @@ form {
   gap: 1rem;
 }
 
+#logoutDialog .popup{
+  display: grid;
+}
+#logoutDialog .popup-content .cta_button{
+  width: 100%;
+  text-align: center;
+}
+
 
 /*---MY PAGE---*/
 
