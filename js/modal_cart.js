@@ -1,6 +1,7 @@
-const modal = document.querySelector("#AddtoCart");
-const openModal = document.querySelector(".rent");
-const closeModal = document.querySelector(".close-button");
+const modal = document.getElementById("AddtoCart");
+const openModal = document.getElementById("rent");
+
+const closeModal = document.getElementById("cancelCart");
 
 openModal.addEventListener("click", () => {
   modal.showModal();
@@ -9,7 +10,6 @@ openModal.addEventListener("click", () => {
 closeModal.addEventListener("click", () => {
   modal.close();
 });
-
 
 
 

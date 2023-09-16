@@ -148,6 +148,7 @@ h3 {
 
 .cta_button:hover {
   background-color: #e6eef2;
+  transition: all .4s ease;
 }
 
 .cta_button a {
@@ -158,6 +159,7 @@ h3 {
 
 .cta_button a:hover {
   color: #168ed9;
+  transition: all .4s ease;
 }
 
 a {
@@ -167,6 +169,7 @@ a {
 
 a:hover {
   color: #168ed9;
+  transition: all .4s ease;
 }
 
 .rating {
@@ -181,11 +184,12 @@ a:hover {
 
 .logo {
   height: 100%;
+
 }
 
 .logo img:hover {
   transform: scale(1.1);
-  transition: all 0.15s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .logo img {
@@ -214,6 +218,14 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   transition: all 0.4s ease-in-out;
+}
+
+nav ul,
+nav li{
+  list-style: none;
+  margin:0;
+  display: block;
+  padding-left: 0;
 }
 
 .nav-toggle {
@@ -281,11 +293,17 @@ nav a i {
 nav a:hover {
   font-weight: bold;
   color: #e6eef2;
+  transition: all .15s ease;
 }
 
 .active,
 nav .menu-item:hover {
   background-color: #168ed9;
+  transition: all .4s ease;
+}
+
+#dp-toggle {
+  display: none;
 }
 
 /*Navbar ends here*/
@@ -639,11 +657,12 @@ footer a:hover {
   gap: 0.5rem;
   width: 100%;
   filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));
+  overflow-x: hidden;
 }
 
 .rev_img {
-  width: 100%;
-  max-height: 12rem;
+  min-width: 100%;
+  height: 12rem;
   object-fit: cover;
   object-position: center center;
 }
@@ -692,6 +711,7 @@ footer a:hover {
 
 .review_btn:hover {
   color: #168ed9;
+  transition: all .4s ease;
 }
 
 .review_btn::before {
@@ -761,7 +781,7 @@ footer a:hover {
   padding: 1rem;
   width: 100%;
   background-color: var(--menu-bg);
-  filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));*/
 }
 
 form {
@@ -793,7 +813,8 @@ form {
 }
 
 .mypage-content .cta_button, /*MY Page Personal information CTA-button */
-.contact-form .cta_button {
+.contact-form .cta_button,
+.popup-content .cta_button {
   grid-area: 4/2/5/3;
   justify-self: end;
   border: none;
@@ -802,12 +823,14 @@ form {
   font-family: "elza narrow", sans-serif;
 }
 
-.contact-form .cta_button:hover {
+.contact-form .cta_button:hover,
+.popup-content .cta_button:hover {
   color: #168ed9;
   background: #edeae6;
 }
 
-.contact-form .actions{
+.contact-form .actions,
+.popup-content .actions{
   grid-area: 4/1/5/3;
   display:flex;
   justify-content: space-around;
@@ -954,7 +977,7 @@ form {
   border-bottom: #1c4b67 2px solid;
 }
 
-.rent {
+#rent {
   margin: 1rem 0;
   justify-self: end;
 }
@@ -1093,6 +1116,7 @@ form {
   background: transparent;
   color: #e6eef2;
   filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));
+  z-index: 999;
 
 }
 
@@ -1151,6 +1175,14 @@ form {
   justify-self: end;
 }
 
+.preferences {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(8rem, 100%),1fr));
+  row-gap:1rem;
+
+
+}
+
 
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
 
@@ -1202,16 +1234,18 @@ form {
     align-self: center;
   }
 
-  nav .menu-container {
+  nav ul{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-family: "niveau-grotesk", sans-serif;
     font-size: 1.8rem;
+    background: var(--menu-bg);
   }
   nav a {
     opacity: 1;
   }
+
 
   .hide {
     display: none;
@@ -1225,6 +1259,38 @@ form {
     display: block;
     visibility: visible;
   }
+
+
+  .dropdown {
+    background: var(--menu-bg);
+    border-bottom: #1c4b67 solid .5rem;
+    position: absolute;
+    margin-top: -100px;
+    z-index: -999;
+    right: 0;
+    width: 16rem;
+    transform: scale(1, 0);
+    transform-origin:inherit;
+    transition: all 0.3s ease-in-out;
+    padding:1rem;
+  }
+
+  nav ul li .dropdown{
+    display: inline-block;
+  }
+
+  nav ul li:hover .dropdown {
+    z-index: -999;
+    margin-top: 30px;
+    visibility: visible;
+    transform: scale(1, 1);
+  }
+
+  #dp-toggle{
+    display: block;
+  }
+
+
   /*End Navbar styling!*/
 
   /*Hero Styling */
