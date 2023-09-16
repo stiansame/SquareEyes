@@ -11,9 +11,6 @@
   --menu-bg: #363638;
 }
 
-span {
-  border-bottom: #1c4b67 solid 2px;
-}
 
 html {
   margin: 0 auto;
@@ -788,7 +785,7 @@ footer a:hover {
   padding: 1rem;
   width: 100%;
   background-color: var(--menu-bg);
-  filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));*/
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));
 }
 
 form {
@@ -1147,7 +1144,8 @@ form {
 }
 
 .popup img,
-.library img {
+.library img,
+.faq img {
   max-height: 300px;
   border-radius: 0.2rem;
   outline: #168ed9 solid 1px;
@@ -1203,6 +1201,9 @@ player .heading_1{
   filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));
 }
 
+player h3 {
+  border-bottom: #1c4b67 solid 2px;
+}
 
 .library {
   background: var(--menu-bg);
@@ -1218,18 +1219,19 @@ player .heading_1{
   padding: 1rem;
 }
 
-.library img{
+.library img,
+.faq img{
   outline:none;
   max-height: 200px;
   min-width: fit-content;
   cursor: pointer;
 }
-.library img:hover {
+.library-content img:hover {
   outline: #168ed9 solid 2px;
 }
 
 .library-content .inactive {
-  filter:saturate(.2) blur(1px);
+  filter:saturate(.2) blur(1px) drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));
   }
 
   .library-content .inactive:hover{
@@ -1254,6 +1256,7 @@ player .heading_1{
   footer {
     margin: 4rem 2rem 0rem;
   }
+
   /*Navbar styling here!*/
 
   .header-container {
