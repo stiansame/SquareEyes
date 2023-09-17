@@ -1375,7 +1375,7 @@ player h3 {
     width: 16rem;
     transform: scale(1, 0);
     transform-origin:inherit;
-    transition: all 0.3s ease-in-out;
+    
     padding:1rem;
     visibility: none;
   }
@@ -1389,6 +1389,7 @@ player h3 {
     margin-top: 30px;
     visibility: visible;
     transform: scale(1, 1);
+    transition: all 0.3s ease-in-out;
   }
 
   #dp-toggle{
