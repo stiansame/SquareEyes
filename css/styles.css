@@ -1006,7 +1006,6 @@ form {
 }
 
 .details-container .description-container .desc {
-  grid-area: 1/1/2/2;
   padding-top: 1rem;
 }
 
