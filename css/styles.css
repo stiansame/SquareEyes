@@ -202,16 +202,17 @@ shoppingcart h1 {
 
 .logo {
   height: 100%;
-
+  
 }
 
 .logo img:hover {
   transform: scale(1.1);
-  transition: all 0.25s ease-in-out;
+  
 }
 
 .logo img {
   max-height: 4rem;
+  transition: all 0.25s ease-in-out;
 }
 
 header {
