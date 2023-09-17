@@ -1386,7 +1386,7 @@ player h3 {
   nav ul li:hover .dropdown {
     z-index: -999;
     margin-top: 30px;
-    visibility: visible;
+    /*visibility: visible;*/
     transform: scale(1, 1);
   }
 
