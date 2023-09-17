@@ -1,4 +1,4 @@
-const checkoutModal = document.getElementById("welcomeDialog");
+const checkoutModal = document.getElementById("checkoutDialog");
 const openCheckoutModal = document.getElementById("purchase");
 
 const closeCheckoutModal = document.getElementById("closeBtn");

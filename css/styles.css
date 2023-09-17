@@ -1214,7 +1214,7 @@ form {
   text-align: center;
 }
 
-.popup #checkout {
+.popup #checkoutmodal {
   display:grid;
   gap: .5rem;
   justify-items: center;
