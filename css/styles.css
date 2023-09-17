@@ -219,7 +219,7 @@ header {
   grid-area: 1/1/2/2;
   background: var(--menu-bg);
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 1rem 0rem;
   border-bottom: #1c4b67 solid 0.5rem;
   filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.8));
 }
@@ -228,7 +228,7 @@ nav {
   font-family: "niveau-grotesk", sans-serif;
   position: absolute;
   text-align: left;
-  top: calc(100% - 0.5rem);
+  top:100% ;
   left: 0;
   background: var(--menu-bg);
   border-bottom: #1c4b67 solid 0.5rem;
@@ -1312,24 +1312,25 @@ player h3 {
 
   header {
     grid-area: 1/2/2/3;
+    display: grid;
+    grid-template-columns: auto minmax(600px, 1fr);
+    align-items: center;
+    padding: 0rem 1rem 1rem;
   }
 
   .nav-toggle-label {
     display: none;
   }
 
-  header {
-    display: grid;
-    grid-template-columns: auto minmax(600px, 1fr);
-  }
-
   .logo {
     grid-area: 1/1/2/2;
     width: 190px;
-  }
+    height: fit-content;
+    padding-top: 1rem;
+    }
 
   .logo img {
-    max-height: 100px;
+    max-height: 80px;
   }
 
   nav {
@@ -1337,6 +1338,8 @@ player h3 {
     grid-area: 1/2/2/3;
     justify-content: flex-end;
     align-self: center;
+    padding-top: 1rem;
+    background: var(--menu-bg);
   }
 
   nav ul{
@@ -1346,6 +1349,7 @@ player h3 {
     font-family: "niveau-grotesk", sans-serif;
     font-size: 1.8rem;
     background: var(--menu-bg);
+    
   }
   nav a {
     opacity: 1;
@@ -1370,17 +1374,15 @@ player h3 {
     background: var(--menu-bg);
     border-bottom: #1c4b67 solid .5rem;
     position: absolute;
-    margin-top: -100px;
+    margin-top: -146px;
     z-index: -999;
     right: 0;
     width: 16rem;
-    transform: scale(1, 0);
-    transform-origin:inherit;
-    transition: all 0.3s ease-in-out;
-    padding:1rem;
-    visibility: none;
-    opacity: 0;
-    display: none;
+    /*transform: scale(1, 0);*/
+    transform-origin:top;
+    transition: all 0.3s ease;
+    padding:2rem 1rem 0rem;
+    opacity:0;
   }
 
   nav ul li .dropdown{
@@ -1389,11 +1391,10 @@ player h3 {
 
   nav ul li:hover .dropdown {
     z-index: 9;
-    margin-top: 30px;
-    visibility: visible;
+    margin-top: 0px;
     transform: scale(1, 1);
     opacity: 1;
-    display: block;
+
   }
 
   #dp-toggle{
