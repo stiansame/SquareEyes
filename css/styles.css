@@ -1226,7 +1226,7 @@ player h3 {
 .library-content,
 .cart-content {
   display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(9rem, 100%),1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(7rem, 100%),1fr));
   justify-items: center;
   gap:1rem;
   background: #e6eef2;
@@ -1237,8 +1237,7 @@ player h3 {
 .faq img,
 .cart-content img{
   outline:none;
-  max-height: 200px;
-  min-width: fit-content;
+  max-height: 150px;
   cursor: pointer;
 }
 .library-content img:hover {
