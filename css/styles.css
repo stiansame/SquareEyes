@@ -1028,7 +1028,8 @@ form {
   margin: 2rem 0rem;
 }
 
-#trailer {
+#trailer,
+#review {
   border-bottom: #1c4b67 solid 2px;
 }
 
