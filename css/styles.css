@@ -45,7 +45,8 @@ moviedetails,
 mypage,
 player,
 shoppingcart,
-checkout {
+checkout,
+register {
   width: 100%;
   display: grid;
   grid-template-columns: 1rem 1fr 1rem;
@@ -65,7 +66,8 @@ moviedetails,
 mypage,
 player,
 shoppingcart,
-checkout {
+checkout,
+register {
   grid-template-rows: repeat(2, auto);
 }
 
@@ -196,7 +198,8 @@ moviedetails h1,
 mypage h1,
 player h1,
 shoppingcart h1,
-checkout h1 {
+checkout h1,
+register h1 {
   margin: 2rem 0rem 1rem;
 
 }
@@ -823,12 +826,14 @@ form {
   outline: #168ed9 2px solid;
   background-color: #ffffff;
 }
+.register-content,
 .mypage-content,
 .checkout-container,
 .contact-form label {
   font-size: clamp(1.2rem, 3dvw, 1.5rem);
 }
 
+.register-content .cta_button,
 .mypage-content .cta_button, /*MY Page Personal information CTA-button */
 .contact-form .cta_button,
 .popup-content .cta_button {
@@ -840,6 +845,7 @@ form {
   font-family: "elza narrow", sans-serif;
 }
 
+.register-content .cta_button:hover,
 .contact-form .cta_button:hover,
 .popup-content .cta_button:hover {
   color: #168ed9;
@@ -1198,6 +1204,11 @@ form {
   justify-items: center;
 }
 
+#loginDialog .popup-content form span {
+  grid-area: 3/1/4/3;
+  justify-self: end;
+  font-size: .9rem;
+}
 
 /*---MY PAGE---*/
 
@@ -1328,6 +1339,20 @@ player h3 {
     margin-right: 1rem;
     color: #e6eef2;
   }
+
+  /* --- Register ---*/
+
+  register .heading_1{
+    grid-area: 1/2/2/3;
+  }
+
+  .register-content {
+    grid-area: 2/2/3/3;
+    background: var(--menu-bg);
+    border-bottom: #1c4b67 solid .5rem;
+    padding:1rem;
+    filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));
+  }
 /*-------------------------------------------------- Responsive Scaling----------------------------*/
 
 @media screen and (min-width: 850px) {
@@ -1341,6 +1366,10 @@ player h3 {
   shoppingcart,
   checkout {
     grid-template-columns: 2rem auto 2rem;
+  }
+
+  register {
+    grid-template-columns: 1fr 500px 1fr;
   }
 
   footer {
