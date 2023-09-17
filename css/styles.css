@@ -38,15 +38,15 @@ body {
 }
 
 main,
-movies,
-about,
-contact,
-moviedetails,
-mypage,
-player,
-shoppingcart,
-checkout,
-register {
+#movies,
+#about,
+#contact,
+#moviedetails,
+#mypage,
+#player,
+#shoppingcart,
+#checkout,
+#register {
   width: 100%;
   display: grid;
   grid-template-columns: 1rem 1fr 1rem;
@@ -56,18 +56,18 @@ main {
   grid-template-rows: auto 2rem auto 8rem 4rem auto 1rem 20rem auto auto;
 }
 
-about,
-contact,
-movies {
+#about,
+#contact,
+#movies {
   grid-template-rows: repeat(5, auto);
 }
 
-moviedetails,
-mypage,
-player,
-shoppingcart,
-checkout,
-register {
+#moviedetails,
+#mypage,
+#player,
+#shoppingcart,
+#checkout,
+#register {
   grid-template-rows: repeat(2, auto);
 }
 
@@ -191,15 +191,15 @@ a:hover {
 }
 
 main h1,
-movies h1,
-about h1,
-contact h1,
-moviedetails h1,
-mypage h1,
-player h1,
-shoppingcart h1,
-checkout h1,
-register h1 {
+#movies h1,
+#about h1,
+#contact h1,
+#moviedetails h1,
+#mypage h1,
+#player h1,
+#shoppingcart h1,
+#checkout h1,
+#register h1 {
   margin: 2rem 0rem 1rem;
 
 }
@@ -1235,7 +1235,7 @@ form {
 
 /*--- PLAYER---*/
 
-player .heading_1{
+#player .heading_1{
   grid-area: 1/2/2/3;
 }
 
@@ -1246,7 +1246,7 @@ player .heading_1{
   filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.8));
 }
 
-player h3 {
+#player h3 {
   border-bottom: #1c4b67 solid 2px;
 }
 
@@ -1287,7 +1287,7 @@ player h3 {
 
   /*--- Shopping cart ---*/
 
-  shoppingcart .heading_1 {
+  #shoppingcart .heading_1 {
     grid-area: 1/2/2/3;
   }
 
@@ -1319,7 +1319,7 @@ player h3 {
 
   /*---- checkout ---*/
 
-  checkout .heading_1 {
+  #checkout .heading_1 {
     grid-area: 1/2/2/3;
   }
 
@@ -1342,7 +1342,7 @@ player h3 {
 
   /* --- Register ---*/
 
-  register .heading_1{
+  #register .heading_1{
     grid-area: 1/2/2/3;
   }
 
@@ -1357,18 +1357,18 @@ player h3 {
 
 @media screen and (min-width: 850px) {
   main,
-  movies,
-  about,
-  contact,
-  moviedetails,
-  mypage,
-  player,
-  shoppingcart,
-  checkout {
+  #movies,
+  #about,
+  #contact,
+  #moviedetails,
+  #mypage,
+  #player,
+  #shoppingcart,
+  #checkout {
     grid-template-columns: 2rem auto 2rem;
   }
 
-  register {
+  #register {
     grid-template-columns: 1fr 500px 1fr;
   }
 
@@ -1554,7 +1554,7 @@ player h3 {
 
   /*About us styling-----*/
 
-  about {
+  #about {
     grid-template-rows: auto auto 10rem auto auto;
   }
 
