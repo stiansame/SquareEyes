@@ -10,7 +10,7 @@
     ></script>
     <link rel="stylesheet" href="https://use.typekit.net/wgh0tdc.css" >
     <link href="../css/styles.css" rel="stylesheet" >
-    <title>SquareEyes - My Page</title>
+    <title>SquareEyes - Checkout</title>
   </head>
   <body>
     <div class="header-container">
@@ -42,18 +42,74 @@
         </label>
       </header>
     </div>
-    <shoppingcart>
-        <div class="heading_1"><h1>Shopping Cart</h1>
+    <checkout>
+        <div class="heading_1"><h1>Checkout</h1>
         </div>
+        <div class="checkout-container">
         <div class="cart-container">
             <div class="cart-content">
                 <img src="../images/dunkirk-movie-poster_2.jpg" alt="Dunkirk Movie">
             </div>
             <span><p class="desc"> <b>Total:</b> $4.99</b></p></span>
-            <a href="../pages/checkout.html"><div class="cta_button">Proceed to checkout</div></a>
 
         </div>
-    </shoppingcart>
+        <div class="payment">
+          <input type="radio" name="faq1" class="faq-selector" id="q1">
+            <div class="faq">
+              <div class="question"><label for="q1">Creditcard</label>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-minus"></i>
+          </div>
+              <div class="answer" id="a1">
+                <form >
+                  <label for="fullname">Full name</label>
+                  <input type="text" name="fullname" id="fullname" class="form__input" placeholder="Full name" required>
+                  <label for="cardnumber">Cardnumber</label>
+                  <input type="number" name="cardnumber" id="cardnumber" class="form__input" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+                  <label for="validto">Valid to</label>
+                  <input type="date" name="validto" id="validto" class="form__input" placeholder="" required>
+                  <label for="cvc">CVC</label>
+                  <input type="password" name="cvc" id="cvc" class="form__input" placeholder="Type in CVC" required>
+              </form>
+              </div>
+          </div>
+          <input type="radio" name="faq1" class="faq-selector" id="q2">
+            <div class="faq">
+              <div class="question"><label for="q2">VIPPS</label>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-minus"></i>
+          </div>
+              <div class="answer" id="a2">
+                <form >
+                  <label for="fullname">Full name</label>
+                  <input type="text" name="fullname" id="fullname" class="form__input" placeholder="Full name" required>
+                  <label for="phone">Mobile Phone</label>
+                  <input type="tel" name="phone" id="phone" class="form__input" placeholder="Type in mobilephone number" required>
+
+              </form>
+              </div>
+          </div>
+          <input type="radio" name="faq1" class="faq-selector" id="q3">
+            <div class="faq">
+              <div class="question"><label for="q3">Klarna</label>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-minus"></i>
+          </div>
+              <div class="answer" id="a3">
+                <form >
+                  <label for="fullname">Full name</label>
+                  <input type="text" name="fullname" id="fullname" class="form__input" placeholder="Full name" required>
+                  <label for="social">Social security</label>
+                  <input type="password" name="social" id="socail" class="form__input" placeholder="Social security number" required>
+              </form>
+              </div>
+          </div>
+          <a href="../pages/checkout.html"><div class="cta_button">Buy Now!</div></a>
+
+
+      </div>
+    </div>
+    </checkout>
 
 
     <footer>
@@ -93,10 +149,22 @@
     </div>
     </dialog>
 
+        <!--Logout modal here!-->
+
+        <dialog class="modal" id="logoutDialog">
+            <div class="popup" id="logout">
+              <h3>Logged out! </h3>
+              <div class="popup-content">
+                <a href="../index.html"><div class="cta_button">Browse</div></a>
+              </div>
+            </div>
+          </dialog>
+
     
 
     <!--Javascript for Modal here!-->
     <script src="../js/modalLogin.js"></script>
+    <script src="../js/modalLogout.js"></script>
 
   </body>
 </html>
