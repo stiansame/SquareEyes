@@ -1377,6 +1377,7 @@ player h3 {
     transform-origin:inherit;
     transition: all 0.3s ease-in-out;
     padding:1rem;
+    visibility: none;
   }
 
   nav ul li .dropdown{
@@ -1384,9 +1385,9 @@ player h3 {
   }
 
   nav ul li:hover .dropdown {
-    z-index: -999;
+    z-index: 9;
     margin-top: 30px;
-    /*visibility: visible;*/
+    visibility: visible;
     transform: scale(1, 1);
   }
 
