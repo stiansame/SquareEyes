@@ -907,7 +907,8 @@ form {
 .payment .question,
 .faq-content .question {
   padding: 0.5rem 1rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
