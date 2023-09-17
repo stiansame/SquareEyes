@@ -1338,7 +1338,7 @@ player h3 {
     grid-area: 1/2/2/3;
     justify-content: flex-end;
     align-self: center;
-    padding-top: 1rem;
+    padding-top: 2rem;
     background: var(--menu-bg);
   }
 
@@ -1378,8 +1378,6 @@ player h3 {
     z-index: -999;
     right: 0;
     width: 16rem;
-    /*transform: scale(1, 0);*/
-    transform-origin:top;
     transition: all 0.3s ease;
     padding:2rem 1rem 0rem;
     opacity:0;
@@ -1393,7 +1391,6 @@ player h3 {
   nav ul li:hover .dropdown {
     z-index: 9;
     margin-top: 0px;
-    transform: scale(1, 1);
     opacity: 1;
     visibility: visible;
 
