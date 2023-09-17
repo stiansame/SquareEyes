@@ -104,7 +104,7 @@
               </form>
               </div>
           </div>
-          <a href="../pages/checkout.html"><div class="cta_button">Buy Now!</div></a>
+          <div class="cta_button" id="buyBtn"><a href="#">Buy Now!</a></div>
 
 
       </div>
@@ -160,11 +160,26 @@
             </div>
           </dialog>
 
+        <!--Checkout modal here!-->
+
+        <dialog class="modal" id="checkoutsuccess">
+          <div class="popup" id="checkout">
+            <h3>THank you for your purchase! </h3>
+            <div class="popup-content">
+              <p>What do you want to do next?</p>
+              <a href="../index.html"><div class="cta_button" id="closeBtn">Browse Movies</div></a>
+              <a href="../index.html"><div class="cta_button" id="closeBtn">Library</div></a>
+              <a href="../index.html"><div class="cta_button" id="closeBtn">Play movie</div></a>
+            </div>
+          </div>
+        </dialog>
+
     
 
     <!--Javascript for Modal here!-->
     <script src="../js/modalLogin.js"></script>
     <script src="../js/modalLogout.js"></script>
+    <script src="../js/modalCheckout.js"></script>
 
   </body>
 </html>
