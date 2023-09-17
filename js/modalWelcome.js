@@ -1,5 +1,5 @@
 const welcomeModal = document.getElementById("welcomeDialog");
-const openWelcomeModal = document.getElementById("regBtn");
+const openWelcomeModal = document.getElementById("reg");
 
 const closeWelcomeModal = document.getElementById("mypageBtn");
 
